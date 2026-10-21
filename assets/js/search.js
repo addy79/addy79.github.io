@@ -4,10 +4,10 @@
 
 const SEARCH_INDEX = [
   {
-    title: "Pioneer ROV: Underwater Exploration Submersible (Team Leader)",
+    title: "Pioneer ROV: Underwater Exploration Submersible (2027 Marine Robotics Challenge)",
     category: "Robotics & Autonomous Systems",
     url: "/projects/#pioneer-rov",
-    keywords: "rov underwater robotics aui robotics club pioneer telemetry thruster control marine team leader"
+    keywords: "rov underwater robotics aui robotics club pioneer telemetry thruster control marine team leader 2027"
   },
   {
     title: "Self-Balancing Inverted Pendulum Robot (STM32 & Kalman Filter)",
@@ -218,6 +218,24 @@ const SEARCH_INDEX = [
     category: "XR & Simulation",
     url: "/projects/#coassembly",
     keywords: "coassembly godot vr networking multi-user collaborative spatial audio engineering"
+  },
+  {
+    title: "MMLabVR: Mechanics of Materials Virtual Laboratory (11 Benches)",
+    category: "XR & Simulation",
+    url: "/projects/#mmlab-vr",
+    keywords: "mmlabvr mechanics of materials godot openxr tensile test torsion beam deflection mohr circle stress virtual lab"
+  },
+  {
+    title: "CalcVR: Multivariable Calculus 3D Spatial Visualizer",
+    category: "XR & Simulation",
+    url: "/projects/#calc-vr",
+    keywords: "calcvr multivariable calculus 3d godot openxr surface tangent planes vector fields solids revolution"
+  },
+  {
+    title: "VRScent: Multisensory Olfactory Science Simulator (Wi-Fi Hardware)",
+    category: "XR & Simulation",
+    url: "/projects/#vrscent",
+    keywords: "vrscent olfactory vr scent hardware godot openxr raoult law vapor dispersion pharmacognosy safety"
   },
   {
     title: "Autonomous Line-Tracking Robot (PID Steering)",

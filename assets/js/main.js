@@ -38,7 +38,23 @@ function getPinnedProjects() {
     }
   }
   // Default pinned projects
-  return ["digitwin1", "freecad-suite", "vrmechanics", "brushlesslab"];
+  return [
+    "pioneer-rov",
+    "self-balancing",
+    "quadruped",
+    "micromouse",
+    "scara-robot",
+    "digitwin1",
+    "stm32-foc",
+    "haptic-stylus",
+    "delta-vision-sorter",
+    "cnc-wire-bender",
+    "brushlesslab",
+    "vrmechanics",
+    "mmlab-vr",
+    "calc-vr",
+    "vrscent"
+  ];
 }
 
 function savePinnedProjects(list) {
@@ -89,18 +105,18 @@ function applyFilter(filter) {
 
   projectCards.forEach(card => {
     if (filter === "all") {
-      card.style.display = "block";
+      card.style.display = "";
       card.style.opacity = "1";
     } else if (filter === "filter-pinned") {
       if (pinned.includes(card.id)) {
-        card.style.display = "block";
+        card.style.display = "";
         card.style.opacity = "1";
       } else {
         card.style.display = "none";
         card.style.opacity = "0";
       }
     } else if (card.classList.contains(filter)) {
-      card.style.display = "block";
+      card.style.display = "";
       card.style.opacity = "1";
     } else {
       card.style.display = "none";
@@ -115,13 +131,26 @@ function initProjectPinning() {
 
   if (filterBtns.length > 0) {
     filterBtns.forEach(btn => {
-      btn.addEventListener("click", function () {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
         filterBtns.forEach(b => b.classList.remove("active"));
         this.classList.add("active");
         const filter = this.getAttribute("data-filter");
         applyFilter(filter);
       });
     });
+
+    // Handle direct link to a category filter like #filter-xr or #filter-robotics
+    const hash = window.location.hash;
+    if (hash && hash.startsWith("#filter-")) {
+      const targetFilter = hash.substring(1);
+      const targetBtn = document.querySelector(`.filter-btn[data-filter="${targetFilter}"]`);
+      if (targetBtn) {
+        filterBtns.forEach(b => b.classList.remove("active"));
+        targetBtn.classList.add("active");
+        applyFilter(targetFilter);
+      }
+    }
   }
 }
 
@@ -161,5 +190,7 @@ function toggleAbstract(id) {
     elem.style.display = "none";
   } else {
     elem.style.display = "block";
+  }
 }
+
 

@@ -105,12 +105,13 @@
                 <h3 class="card-title">Pioneer ROV</h3>
                 <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Marine Submersible</div>
+              <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; 2027 Marine Robotics Challenge</div>
               <p class="card-text">
-                Autonomous and tethered marine submersible engineered for this year's marine robotics competition. Leading the multidisciplinary engineering team: architected the high-power distribution bus, 6-thruster vector control allocation matrix, low-latency RS-485/Ethernet tether telemetry, and neutral-buoyancy ballast frame.
+                Autonomous and tethered marine submersible engineered for the 2027 Marine Robotics Challenge. Leading the multidisciplinary engineering team: architected the high-power distribution bus, 6-thruster vector control allocation matrix, low-latency RS-485/Ethernet tether telemetry, and neutral-buoyancy ballast frame.
               </p>
               <div>
                 <span class="badge-tag">ROV Team Leader</span>
+                <span class="badge-tag">2027 Challenge</span>
                 <span class="badge-tag">Marine Robotics</span>
                 <span class="badge-tag">6-Thruster Vectoring</span>
                 <span class="badge-tag">Power Distribution</span>
@@ -118,7 +119,7 @@
                 <span class="badge-tag">RS-485 Telemetry</span>
               </div>
               <div class="project-actions">
-                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club Competition</span>
+                <button class="btn-folio" onclick="openReadmeModal('pioneer-rov')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -148,7 +149,7 @@
                 <span class="badge-tag">Dynamic Balance</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/self-balancing-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Firmware &amp; Control</a>
+                <button class="btn-folio" onclick="openReadmeModal('self-balancing')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -178,7 +179,7 @@
                 <span class="badge-tag">Mechatronics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/quadruped-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Kinematics &amp; Control</a>
+                <button class="btn-folio" onclick="openReadmeModal('quadruped')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -207,7 +208,7 @@
                 <span class="badge-tag">High-Speed Motion</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/micromouse" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Maze Algorithm</a>
+                <button class="btn-folio" onclick="openReadmeModal('micromouse')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -237,7 +238,7 @@
                 <span class="badge-tag">Pneumatics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/scara-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Kinematics &amp; CAD</a>
+                <button class="btn-folio" onclick="openReadmeModal('scara-robot')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -267,7 +268,7 @@
                 <span class="badge-tag">Control Systems</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
+                <button class="btn-folio" onclick="openReadmeModal('digitwin1')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -297,7 +298,7 @@
                 <span class="badge-tag">Power Electronics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/stm32-foc-driver" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Firmware &amp; Hardware</a>
+                <button class="btn-folio" onclick="openReadmeModal('stm32-foc')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -327,7 +328,7 @@
                 <span class="badge-tag">UDP Telemetry</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/haptic-teleoperation-stylus" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Kinematics &amp; Teleop</a>
+                <button class="btn-folio" onclick="openReadmeModal('haptic-stylus')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -357,7 +358,7 @@
                 <span class="badge-tag">Pneumatics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/delta-vision-sorter" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Vision &amp; Trajectory</a>
+                <button class="btn-folio" onclick="openReadmeModal('delta-vision-sorter')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -387,7 +388,7 @@
                 <span class="badge-tag">Mechatronics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/cnc-wire-bender" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> G-Code &amp; Motion</a>
+                <button class="btn-folio" onclick="openReadmeModal('cnc-wire-bender')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -474,7 +475,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
+                <button class="btn-folio" onclick="openReadmeModal('brushlesslab')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -507,7 +508,7 @@
                 <span class="badge-tag">Motor CAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('bldc-outrunner')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -536,7 +537,7 @@
                 <span class="badge-tag">Robotics Joint</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
+                <button class="btn-folio" onclick="openReadmeModal('harmonic-drive')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -565,7 +566,7 @@
                 <span class="badge-tag">Dynamic Balance</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
+                <button class="btn-folio" onclick="openReadmeModal('cycloidal-drive')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -594,7 +595,7 @@
                 <span class="badge-tag">FreeCAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('stewart-platform')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -622,7 +623,7 @@
                 <span class="badge-tag">Parallel Mechanisms</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('delta-robot')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -651,7 +652,7 @@
                 <span class="badge-tag">FreeCAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+                <button class="btn-folio" onclick="openReadmeModal('robot-arm-6dof')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -680,7 +681,7 @@
                 <span class="badge-tag">Power Transmission</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -709,7 +710,7 @@
                 <span class="badge-tag">Automotive CAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -738,7 +739,7 @@
                 <span class="badge-tag">Solid Modeling</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Assembly</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -767,7 +768,7 @@
                 <span class="badge-tag">Machined Surfaces</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -796,7 +797,7 @@
                 <span class="badge-tag">Apex Seals</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -825,7 +826,7 @@
                 <span class="badge-tag">Airfoil Blading</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -854,7 +855,7 @@
                 <span class="badge-tag">FreeCAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -883,7 +884,7 @@
                 <span class="badge-tag">Kinematics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Linkage</a>
+                <button class="btn-folio" onclick="openReadmeModal('freecad-suite')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -916,7 +917,7 @@
                 <span class="badge-tag">Spatial UI</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('vrmechanics')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -945,7 +946,7 @@
                 <span class="badge-tag">Physics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/vrfields" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('vrfields')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -974,7 +975,97 @@
                 <span class="badge-tag">Collaborative CAD</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('coassembly')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 27. MMLabVR -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-pinned" id="mmlab-vr">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/mmlab_vr.jpg" alt="MMLabVR Mechanics of Materials Virtual Reality Lab">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">MMLabVR: Mechanics of Materials</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('mmlab-vr')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Comprehensive Virtual Laboratory &bull; 11 Benches &bull; Godot OpenXR</div>
+              <p class="card-text">
+                Immersive virtual engineering laboratory for Mechanics of Materials spanning 10 core academic chapters and 11 interactive physical test benches: universal tensile/compression testing with von Mises stress contours, shaft torsion rigs, beam deflection analysis, and interactive 3D Mohr's stress circle transformation.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">Materials Science</span>
+                <span class="badge-tag">Mohr's Circle</span>
+                <span class="badge-tag">Stress Tensors</span>
+                <span class="badge-tag">XR Lab</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-folio" onclick="openReadmeModal('mmlab-vr')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 28. CalcVR -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-pinned" id="calc-vr">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/calc_vr.jpg" alt="CalcVR Multivariable Calculus in 3D VR">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">CalcVR: Multivariable Calculus</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('calc-vr')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">3D Spatial Math Visualizer &bull; Tangent Planes &bull; OpenXR</div>
+              <p class="card-text">
+                Spatial 3D mathematical visualization laboratory engineered in Godot OpenXR. Allows students and mathematicians to plot arbitrary multi-variable surfaces $z = f(x, y)$, manipulate tangent planes, visualize gradient descent vectors, slice Riemann solids of revolution, and probe 3D divergence and curl vector fields with physical 6-DOF VR controllers.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">Multivariable Math</span>
+                <span class="badge-tag">3D Surfaces</span>
+                <span class="badge-tag">Vector Calculus</span>
+                <span class="badge-tag">Spatial Computing</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-folio" onclick="openReadmeModal('calc-vr')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 29. VRScent -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-pinned" id="vrscent">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/vrscent_lab.jpg" alt="VRScent Multisensory Science Labs">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">VRScent: Multisensory Olfactory Lab</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('vrscent')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Olfactory Simulation &bull; Chemical Vapor Dispersion &bull; Wi-Fi Hardware</div>
+              <p class="card-text">
+                Multisensory virtual science laboratory integrating real-time chemical evaporation simulations with custom Wi-Fi scent hardware. Features Raoult's law volatile constituent evaporation, wafting plume dynamics with parts-per-million human exposure tracking, a 7-plant pharmacognosy herb garden, and a forensic safety lab demonstrating lethal olfactory fatigue.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">Olfactory Display</span>
+                <span class="badge-tag">Vapor Dispersion</span>
+                <span class="badge-tag">Pharmacognosy</span>
+                <span class="badge-tag">IoT Hardware</span>
+              </div>
+              <div class="project-actions">
+                <button class="btn-folio" onclick="openReadmeModal('vrscent')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1006,7 +1097,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('early-games')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1034,7 +1125,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('early-games')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1062,7 +1153,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('early-games')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1090,7 +1181,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('early-games')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1118,7 +1209,7 @@
                 <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <button class="btn-folio" onclick="openReadmeModal('early-games')"><i class="fa-brands fa-github mr-1"></i> README.md</button>
               </div>
             </div>
           </div>
@@ -1153,6 +1244,7 @@
   </div>
 
   <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/readme-data.js"></script>
   <script src="/assets/js/main.js"></script>
   <script src="/assets/js/kinematics-bg.js"></script>
 </body>
