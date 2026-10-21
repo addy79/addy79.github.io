@@ -40,6 +40,30 @@ const SEARCH_INDEX = [
     keywords: "godot openxr raspberry pi udp actuator digital twin hil robotics controls hardware python"
   },
   {
+    title: "STM32 FOC Brushless Servo Driver Board (SVPWM & CAN Bus)",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#stm32-foc",
+    keywords: "stm32 foc driver field-oriented control bldc svpwm as5048a magnetic encoder can bus motor control power electronics"
+  },
+  {
+    title: "3-DOF Force-Feedback Haptic Teleoperation Stylus (OpenXR)",
+    category: "Cyber-Physical & XR",
+    url: "/projects/#haptic-stylus",
+    keywords: "haptic teleoperation stylus force feedback impedance control godot openxr pantograph capstan drive udp bilateral"
+  },
+  {
+    title: "Delta Robot High-Speed Vision Sorter (TinyML & OpenCV)",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#delta-vision-sorter",
+    keywords: "delta robot high speed vision sorter tinyml opencv computer vision conveyor tracking parallel kinematics pick place"
+  },
+  {
+    title: "Automated Desktop CNC 3D Wire Bending Machine",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#cnc-wire-bender",
+    keywords: "cnc wire bender automated 3d bending machine stepper motor esp32 g-code pneumatic shear mechatronics"
+  },
+  {
     title: "BrushlessLab: 3-Phase BLDC Motor Diagnostic Bench",
     category: "Mechatronics & XR",
     url: "/projects/#brushlesslab",
