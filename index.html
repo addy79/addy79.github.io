@@ -136,43 +136,7 @@
           </p>
         </div>
 
-        <!-- Interactive Cyber Terminal -->
-        <div class="cyber-terminal">
-          <div class="terminal-header">
-            <div class="terminal-dots">
-              <span class="terminal-dot dot-red"></span>
-              <span class="terminal-dot dot-yellow"></span>
-              <span class="terminal-dot dot-green"></span>
-            </div>
-            <div class="terminal-title"><i class="fa-solid fa-terminal mr-1 text-danger"></i> asmae@aui-mechatronics ~ console</div>
-            <div class="terminal-status"><span class="live-pulse-red" style="width:7px; height:7px;"></span></div>
-          </div>
-          <div class="terminal-body" id="terminal-body">
-            <div class="terminal-text-dim">Antigravity Mechatronics Kernel v4.2.0-rel [x86_64-linux]</div>
-            <div class="terminal-text-dim">Type <span class="terminal-text-red">help</span> or click quick command chips below to inspect systems.</div>
-            <div class="terminal-output-block mt-2">
-              <div class="terminal-cmd-echo"><span class="terminal-text-red">asmae@aui-mechatronics:~$</span> asmae --status</div>
-              <div><span class="terminal-text-success">[TELEMETRY STATUS: NOMINAL]</span>
-  • <span class="terminal-text-bold">Operator:</span> Asmae El Harti — General Engineer • Mechatronics
-  • <span class="terminal-text-bold">Base:</span> Al Akhawayn University in Ifrane (AUI, Class of '27)
-  • <span class="terminal-text-bold">Current Mission:</span> Pioneer ROV Team Leader &amp; Mechatronics Engineer
-  • <span class="terminal-text-bold">Active Bridge:</span> Digitwin1 OpenXR spatial sync via sub-millisecond UDP sockets</div>
-            </div>
-          </div>
-          <div class="terminal-prompt-chips">
-            <span class="terminal-chip-label">Quick Commands:</span>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --status')">asmae --status</button>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --robots')">asmae --robots</button>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --bridge')">asmae --bridge</button>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --stack')">asmae --stack</button>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --contact')">asmae --contact</button>
-            <button class="terminal-prompt-chip" onclick="runTerminalChip('clear')" style="color:#94a3b8;">clear</button>
-          </div>
-          <div class="terminal-input-row">
-            <span class="terminal-prompt-label">asmae@aui:~$</span>
-            <input type="text" id="terminal-cmd-input" class="terminal-input" placeholder="type 'help', 'robots', 'bridge', or 'stack' and hit Enter..." autocomplete="off" spellcheck="false">
-          </div>
-        </div>
+
 
         <!-- Tools of the Trade (josephojo style capsules) -->
         <h2 class="section-title" id="tools-of-the-trade">
@@ -314,93 +278,14 @@
           </div>
         </div>
 
-        <!-- Featured Projects Section -->
+        <!-- Featured Robotics & Systems Section -->
         <h2 class="section-title">
-          <span><i class="fa-solid fa-cubes mr-2"></i> Flagship Projects</span>
-          <a href="/projects/" class="view-all">View all projects &amp; interactive gallery <i class="fa-solid fa-arrow-right ml-1"></i></a>
+          <span><i class="fa-solid fa-robot mr-2 text-danger"></i> Robotics &amp; Autonomous Systems</span>
+          <a href="/projects/" class="view-all">View all projects &amp; systems <i class="fa-solid fa-arrow-right ml-1"></i></a>
         </h2>
 
         <div class="row">
-          <!-- 1. Digitwin1 -->
-          <div class="col-md-6 mb-4">
-            <div class="project-card">
-              <div class="img-wrapper">
-                <img src="/assets/img/digitwin_actuator.jpg" alt="Digitwin1 Cyber-Physical Actuator">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Digitwin1</h3>
-                <div class="card-subtitle">Cyber-Physical Actuator Digital Twin &bull; The Bridge Era</div>
-                <p class="card-text">
-                  Hardware-in-the-loop (HIL) 1-DOF robotic actuator digital twin in Godot + OpenXR. Bridges physical embedded encoder telemetry with virtual spatial simulation over low-latency UDP sockets.
-                </p>
-                <div>
-                  <span class="badge-tag">Godot</span>
-                  <span class="badge-tag">OpenXR</span>
-                  <span class="badge-tag">Raspberry Pi</span>
-                  <span class="badge-tag">UDP Bridge</span>
-                  <span class="badge-tag">Controls</span>
-                </div>
-                <div class="project-actions">
-                  <a href="/projects/#digitwin1" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
-                  <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2. FreeCAD Suite -->
-          <div class="col-md-6 mb-4">
-            <div class="project-card">
-              <div class="img-wrapper">
-                <img src="/assets/img/cycloidal_drive.png" alt="Parametric CAD Suite">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">Parametric Mechanism Suite</h3>
-                <div class="card-subtitle">Kinematic Assemblies &bull; Open-Source Parametric CAD Models</div>
-                <p class="card-text">
-                  Comprehensive mechanical design portfolio featuring zero-backlash cycloidal reducers, harmonic strain-wave drives, Stewart hexapod platforms, 6-DOF robotic arms, and jet engine cutaways.
-                </p>
-                <div>
-                  <span class="badge-tag">FreeCAD</span>
-                  <span class="badge-tag">Parametric CAD</span>
-                  <span class="badge-tag">Cycloidal Gears</span>
-                  <span class="badge-tag">Robotics</span>
-                </div>
-                <div class="project-actions">
-                  <a href="/projects/#freecad-suite" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
-                  <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3. BrushlessLab & VRMechanics -->
-          <div class="col-md-6 mb-4">
-            <div class="project-card">
-              <div class="img-wrapper">
-                <img src="/assets/img/brushless_lab.png" alt="BrushlessLab Test Stand">
-              </div>
-              <div class="card-body">
-                <h3 class="card-title">BrushlessLab &amp; VRMechanics</h3>
-                <div class="card-subtitle">OpenXR Mechatronics Laboratories &bull; XR Era</div>
-                <p class="card-text">
-                  Immersive spatial labs for 3-phase BLDC motor diagnostic characterization, dynamometer bench testing, back-EMF waveform analysis, and 6-DOF mechanism disassembly.
-                </p>
-                <div>
-                  <span class="badge-tag">Godot</span>
-                  <span class="badge-tag">BLDC</span>
-                  <span class="badge-tag">OpenXR</span>
-                  <span class="badge-tag">Diagnostics</span>
-                </div>
-                <div class="project-actions">
-                  <a href="/projects/#brushlesslab" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
-                  <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Code</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- 4. Pioneer ROV -->
+          <!-- 1. Pioneer ROV -->
           <div class="col-md-6 mb-4">
             <div class="project-card">
               <div class="img-wrapper">
@@ -408,18 +293,148 @@
               </div>
               <div class="card-body">
                 <h3 class="card-title">Pioneer ROV</h3>
-                <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Active Competition Submersible</div>
+                <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Marine Submersible</div>
                 <p class="card-text">
-                  Leading the team and engineering the electrical distribution, 6-thruster vector control allocation matrix, tethered telemetry, and neutral-buoyancy chassis for this year's marine robotics competition.
+                  Leading the multidisciplinary engineering team for this year's marine robotics challenge. Designed the high-current power distribution board, 6-thruster vector control allocation matrix, RS-485/Ethernet tethered telemetry, and neutral-buoyancy frame.
                 </p>
                 <div>
                   <span class="badge-tag">ROV Team Leader</span>
                   <span class="badge-tag">Marine Robotics</span>
-                  <span class="badge-tag">Thrusters</span>
-                  <span class="badge-tag">Power Systems</span>
+                  <span class="badge-tag">6-Thruster Vectoring</span>
+                  <span class="badge-tag">Power Electronics</span>
+                  <span class="badge-tag">Embedded C++</span>
                 </div>
                 <div class="project-actions">
-                  <a href="/projects/#pioneer-rov" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
+                  <a href="/projects/#pioneer-rov" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Self-Balancing Robot -->
+          <div class="col-md-6 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/balancing_robot.jpg" alt="Two-Wheeled Self-Balancing Robot">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Self-Balancing Inverted Pendulum</h3>
+                <div class="card-subtitle">Two-Wheeled Dynamic Balancing Platform &bull; STM32 &bull; Kalman Filter</div>
+                <p class="card-text">
+                  Autonomous two-wheeled inverted pendulum robot maintaining vertical equilibrium using an STM32 microcontroller. Fuses 6-axis MPU6050 accelerometer/gyroscope signals through a discrete Kalman filter, feeding a 200 Hz cascaded PID motor controller with optical quadrature encoder odometry.
+                </p>
+                <div>
+                  <span class="badge-tag">STM32</span>
+                  <span class="badge-tag">Kalman Filter</span>
+                  <span class="badge-tag">Cascaded PID</span>
+                  <span class="badge-tag">Inverted Pendulum</span>
+                  <span class="badge-tag">Optical Encoders</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#self-balancing" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. 12-DOF Quadruped Robot -->
+          <div class="col-md-6 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/quadruped_robot.jpg" alt="12-DOF Quadruped Locomotion Robot">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">12-DOF Quadruped Walking Robot</h3>
+                <div class="card-subtitle">Dynamic Legged Locomotion &bull; Bezier Trajectories &bull; IMU Stabilization</div>
+                <p class="card-text">
+                  Bio-inspired 4-legged walking robot featuring 3 active degrees of freedom per limb. Implements 3-DOF analytical leg inverse kinematics with 12-point Bezier curve foot trajectory generation, dynamic trotting gaits, and active IMU-driven body roll/pitch stabilization.
+                </p>
+                <div>
+                  <span class="badge-tag">12-DOF</span>
+                  <span class="badge-tag">Legged Robotics</span>
+                  <span class="badge-tag">Inverse Kinematics</span>
+                  <span class="badge-tag">Bezier Gait</span>
+                  <span class="badge-tag">Active Balancing</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#quadruped" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Micromouse Maze Solver -->
+          <div class="col-md-6 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/micromouse.jpg" alt="Autonomous Micromouse Maze Solver">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Autonomous Micromouse Maze Solver</h3>
+                <div class="card-subtitle">Competition Labyrinth Navigation &bull; Flood-Fill &bull; Optical Odometry</div>
+                <p class="card-text">
+                  High-speed autonomous maze navigation robot engineered for 16&times;16 competition labyrinths. Implements real-time dynamic Flood-Fill path planning, multi-channel side/diagonal IR rangefinder sensing with ambient light cancellation, and micro-coreless DC drive with high-traction silicone tires.
+                </p>
+                <div>
+                  <span class="badge-tag">Micromouse</span>
+                  <span class="badge-tag">Flood-Fill Algorithm</span>
+                  <span class="badge-tag">Infrared Odometry</span>
+                  <span class="badge-tag">Autonomous Navigation</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#micromouse" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. SCARA 4-DOF Manipulator -->
+          <div class="col-md-6 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/scara_robot.jpg" alt="4-DOF SCARA Robotic Manipulator">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">4-DOF SCARA Robotic Manipulator</h3>
+                <div class="card-subtitle">Selective Compliance Assembly Arm &bull; Stepper Motion &bull; Kinematics</div>
+                <p class="card-text">
+                  Precision selective compliance articulated robot arm engineered for high-speed pick-and-place assembly. Features planar 2-link analytical kinematics, NEMA 17 stepper motors with timing belt reduction, vertical ballscrew Z-axis elevation, and pneumatic vacuum tool end-effector.
+                </p>
+                <div>
+                  <span class="badge-tag">SCARA</span>
+                  <span class="badge-tag">Robotic Arm</span>
+                  <span class="badge-tag">Analytical Kinematics</span>
+                  <span class="badge-tag">NEMA 17 Steppers</span>
+                  <span class="badge-tag">Pneumatics</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#scara-robot" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Digitwin1 -->
+          <div class="col-md-6 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/digitwin_actuator.jpg" alt="Digitwin1 Cyber-Physical Actuator">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Digitwin1 Cyber-Physical Twin</h3>
+                <div class="card-subtitle">Hardware-in-the-Loop Actuator &bull; Low-Latency UDP &bull; OpenXR</div>
+                <p class="card-text">
+                  Hardware-in-the-loop (HIL) 1-DOF robotic actuator digital twin connecting a physical actuator and encoder test stand with an OpenXR spatial simulation in Godot. Streams real-time encoder angles, torque setpoints, dynamic limits, and automated safety interlocks over low-latency UDP sockets.
+                </p>
+                <div>
+                  <span class="badge-tag">Hardware-in-the-Loop</span>
+                  <span class="badge-tag">OpenXR</span>
+                  <span class="badge-tag">Godot</span>
+                  <span class="badge-tag">Raspberry Pi</span>
+                  <span class="badge-tag">UDP Sockets</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#digitwin1" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Project Details</a>
                 </div>
               </div>
             </div>

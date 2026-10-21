@@ -7,7 +7,7 @@
 
   <title>Engineering Portfolio | Asmae El Harti</title>
   <meta name="author" content="Asmae El Harti">
-  <meta name="description" content="Engineering portfolio of Asmae El Harti: Digital Twins, Mechatronics, Parametric CAD Mechanisms, OpenXR VR, and Robotics.">
+  <meta name="description" content="Engineering portfolio of Asmae El Harti: Robotics, Autonomous Systems, Cyber-Physical Digital Twins, and Mechatronics.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
@@ -73,55 +73,29 @@
         <h1 class="post-title">
           <span class="font-weight-bold">Engineering</span> Portfolio
         </h1>
-        <p class="desc">A lifetime of building: from early physics game engines to autonomous robotics, precision parametric CAD mechanisms, and cyber-physical digital twins.</p>
+        <p class="desc">Autonomous robotics, embedded control systems, cyber-physical digital twins, precision kinematic transmissions, and spatial computing simulations.</p>
       </header>
 
       <!-- Category Filter Tabs with Interactive Pinned Option -->
       <div class="filter-tabs">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="filter-pinned"><i class="fa-solid fa-star text-warning mr-1"></i> Pinned / Favorites</button>
-        <button class="filter-btn" data-filter="filter-bridge">Cyber-Physical Bridge</button>
-        <button class="filter-btn" data-filter="filter-cad">CAD &amp; Mechanisms</button>
-        <button class="filter-btn" data-filter="filter-robotics">Robotics Era</button>
-        <button class="filter-btn" data-filter="filter-xr">XR &amp; Simulation</button>
-        <button class="filter-btn" data-filter="filter-games">Early Games Era</button>
+        <button class="filter-btn" data-filter="filter-pinned"><i class="fa-solid fa-star text-warning mr-1"></i> Pinned / Highlights</button>
+        <button class="filter-btn" data-filter="filter-robotics"><i class="fa-solid fa-robot mr-1 text-danger"></i> Robotics &amp; Autonomous Systems</button>
+        <button class="filter-btn" data-filter="filter-bridge"><i class="fa-solid fa-network-wired mr-1"></i> Cyber-Physical &amp; Test Stands</button>
+        <button class="filter-btn" data-filter="filter-cad"><i class="fa-solid fa-gears mr-1"></i> Actuator Transmissions &amp; CAD</button>
+        <button class="filter-btn" data-filter="filter-xr"><i class="fa-solid fa-vr-cardboard mr-1"></i> XR &amp; Simulation</button>
+        <button class="filter-btn" data-filter="filter-games"><i class="fa-solid fa-gamepad mr-1"></i> Early Games Era</button>
       </div>
 
       <!-- Projects Grid -->
       <div class="row">
 
-        <!-- 1. Digitwin1 -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="digitwin1">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/digitwin_actuator.jpg" alt="Digitwin1 Cyber-Physical Actuator">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Digitwin1</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('digitwin1')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Cyber-Physical 1-DOF Robotic Actuator Digital Twin &bull; The Bridge Era</div>
-              <p class="card-text">
-                An end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot. Features a standalone Python daemon running on embedded hardware, streaming encoder angles, commanded setpoints, and torque feedback over low-latency UDP sockets. Includes dynamic joint limits, real-time telemetry gauges, and automated safety interlocks.
-              </p>
-              <div>
-                <span class="badge-tag">Godot</span>
-                <span class="badge-tag">OpenXR</span>
-                <span class="badge-tag">Raspberry Pi</span>
-                <span class="badge-tag">UDP Bridge</span>
-                <span class="badge-tag">Python</span>
-                <span class="badge-tag">Control Systems</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- ============================================== -->
+        <!-- 1. ROBOTICS & AUTONOMOUS SYSTEMS (FEATURED)    -->
+        <!-- ============================================== -->
 
-        <!-- 2. Pioneer ROV -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-bridge" id="pioneer-rov">
+        <!-- 1. Pioneer ROV -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-bridge filter-pinned" id="pioneer-rov">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/pioneer_rov.png" alt="Pioneer ROV Underwater Robotics">
@@ -131,782 +105,179 @@
                 <h3 class="card-title">Pioneer ROV</h3>
                 <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Active Competition Submersible</div>
+              <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Marine Submersible</div>
               <p class="card-text">
-                Autonomous and tethered underwater robotics vehicle engineered for this year's marine robotics competition. Leading the team and engineering the electrical architecture, 6-thruster vector control allocation, high-voltage battery regulation, and tethered RS-485/Ethernet sensor telemetry for extreme aquatic environments.
+                Autonomous and tethered marine submersible engineered for this year's marine robotics competition. Leading the multidisciplinary engineering team: architected the high-power distribution bus, 6-thruster vector control allocation matrix, low-latency RS-485/Ethernet tether telemetry, and neutral-buoyancy ballast frame.
               </p>
               <div>
                 <span class="badge-tag">ROV Team Leader</span>
                 <span class="badge-tag">Marine Robotics</span>
-                <span class="badge-tag">Thruster Vectoring</span>
+                <span class="badge-tag">6-Thruster Vectoring</span>
                 <span class="badge-tag">Power Distribution</span>
                 <span class="badge-tag">Embedded C++</span>
+                <span class="badge-tag">RS-485 Telemetry</span>
               </div>
               <div class="project-actions">
-                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club</span>
+                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club Competition</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 3. BrushlessLab -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="brushlesslab">
+        <!-- 2. Self-Balancing Inverted Pendulum Robot -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-pinned" id="self-balancing">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/brushless_bench.png" alt="BrushlessLab Test Stand">
+              <img src="/assets/img/balancing_robot.jpg" alt="Two-Wheeled Self-Balancing Robot">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">BrushlessLab</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('brushlesslab')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">Self-Balancing Inverted Pendulum</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('self-balancing')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">3-Phase BLDC Motor Diagnostics &amp; Characterization Bench &bull; XR Era</div>
+              <div class="card-subtitle">Two-Wheeled Dynamic Balancing Platform &bull; STM32 &bull; Kalman Filter</div>
               <p class="card-text">
-                Virtual diagnostic and characterization bench for brushless direct-current (BLDC) actuators. Features 6 distinct diagnostic stations: milliohm winding resistance validation, back-EMF waveform scope visualization, Hall sensor timing calibration, dynamic dynamometer loading, and bearing envelope wear analysis.
+                Autonomous two-wheeled inverted pendulum balancing platform engineered around an STM32 ARM Cortex microcontroller. Fuses high-rate 6-axis MPU6050 accelerometer and gyroscope data through a discrete Kalman filter, driving optical quadrature encoders and a 200 Hz cascaded PID balance and position velocity loop.
               </p>
               <div>
-                <span class="badge-tag">BLDC Motors</span>
-                <span class="badge-tag">Actuators</span>
-                <span class="badge-tag">Oscilloscope</span>
-                <span class="badge-tag">Motor Diagnostics</span>
-                <span class="badge-tag">Godot</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. BLDC Outrunner Motor -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="bldc-outrunner">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/bldc_outrunner.png" alt="BLDC Outrunner Motor Assembly">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">BLDC Outrunner Motor</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('bldc-outrunner')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">High-Torque Density Brushless Actuator Assembly &bull; CAD &amp; Mechatronics</div>
-              <p class="card-text">
-                Precision electro-mechanical CAD model of a 12S14P brushless DC outrunner motor. Models the slotted stator laminations, high-grade NdFeB curved permanent magnet ring, dynamic rotor bell with cooling vents, dual ball bearing seating, and motor shaft press-fit constraints.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">BLDC Outrunner</span>
-                <span class="badge-tag">Electromagnetics</span>
-                <span class="badge-tag">Stator Laminations</span>
-                <span class="badge-tag">Motor CAD</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Harmonic & Strain-Wave Reducers -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="harmonic-drive">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/harmonic_drive.png" alt="Harmonic Drive CAD">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Harmonic Strain-Wave Reducer</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('harmonic-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Zero-Backlash High-Ratio Robotic Transmission &bull; Precision CAD</div>
-              <p class="card-text">
-                Parametric design of strain-wave (harmonic) gearing featuring an elliptical wave generator bearing, flexible external-toothed cup spline (flexspline), and rigid internal circular spline. Engineered for compact, high-reduction-ratio robotic joints requiring zero mechanical backlash.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Strain Wave</span>
-                <span class="badge-tag">Flexspline</span>
-                <span class="badge-tag">Zero Backlash</span>
-                <span class="badge-tag">Robotics Joint</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 6. Cycloidal Drive -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="cycloidal-drive">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/cycloidal_drive.png" alt="Cycloidal Drive CAD">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Epicycloidal Speed Reducer</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('cycloidal-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">High-Shock-Load Zero-Backlash Actuator Reducer &bull; Precision CAD</div>
-              <p class="card-text">
-                Fully parameterized cycloidal drive generator based on mathematical epicycloid lobe formulas. Features dual 180°-offset cycloidal discs for dynamic rotational balance, needle roller pins in the ring housing, and output carrier pins with low-friction roller sleeves.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Cycloidal Drive</span>
-                <span class="badge-tag">Epicycloid Math</span>
-                <span class="badge-tag">Needle Rollers</span>
+                <span class="badge-tag">STM32</span>
+                <span class="badge-tag">Kalman Filter</span>
+                <span class="badge-tag">Cascaded PID</span>
+                <span class="badge-tag">Inverted Pendulum</span>
+                <span class="badge-tag">Optical Encoders</span>
                 <span class="badge-tag">Dynamic Balance</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
+                <a href="https://github.com/addy79/self-balancing-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Firmware &amp; Control</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 7. Stewart Hexapod Platform -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="stewart-platform">
+        <!-- 3. 12-DOF Quadruped Walking Robot -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-pinned" id="quadruped">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/stewart_platform.png" alt="Stewart Platform Kinematics">
+              <img src="/assets/img/quadruped_robot.jpg" alt="12-DOF Quadruped Locomotion Robot">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Stewart Hexapod Platform</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('stewart-platform')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">12-DOF Quadruped Walking Robot</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('quadruped')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">6-DOF Parallel Kinematic Platform &bull; Robotics &amp; CAD</div>
+              <div class="card-subtitle">Dynamic Legged Locomotion &bull; Bezier Trajectories &bull; IMU Stabilization</div>
               <p class="card-text">
-                Mathematical parametric assembly of a 6-DOF Stewart Gough hexapod platform. Features 6 variable-stroke prismatic actuators coupled to universal and spherical joints between a fixed base and mobile top platform, supporting closed-form inverse kinematics computation.
+                Bio-inspired 4-legged walking robot featuring 12 active degrees of freedom (3 DOF per limb) with custom carbon-fiber and CNC aluminum chassis. Features 3-DOF analytical leg inverse kinematics, parametric 12-point Bezier curve foot trajectory generation, trotting gaits, and active IMU-driven torso roll/pitch attitude compensation.
               </p>
               <div>
-                <span class="badge-tag">Parallel Kinematics</span>
-                <span class="badge-tag">Hexapod</span>
-                <span class="badge-tag">Stewart Platform</span>
-                <span class="badge-tag">6-DOF</span>
-                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">12-DOF</span>
+                <span class="badge-tag">Legged Robotics</span>
+                <span class="badge-tag">Inverse Kinematics</span>
+                <span class="badge-tag">Bezier Gait</span>
+                <span class="badge-tag">IMU Stabilization</span>
+                <span class="badge-tag">Mechatronics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <a href="https://github.com/addy79/quadruped-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Kinematics &amp; Control</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 8. Delta Parallel Robot -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="delta-robot">
+        <!-- 4. Autonomous Micromouse Maze Solver -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-pinned" id="micromouse">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/delta_robot.png" alt="Delta Parallel Robot">
+              <img src="/assets/img/micromouse.jpg" alt="Autonomous Micromouse Maze Solver">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Delta 3-DOF Parallel Robot</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('delta-robot')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">Autonomous Micromouse Maze Solver</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('micromouse')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">High-Speed Pick-and-Place Manipulator &bull; Robotics &amp; CAD</div>
+              <div class="card-subtitle">Competition Labyrinth Navigation &bull; Flood-Fill &bull; Optical Odometry</div>
               <p class="card-text">
-                High-speed industrial Delta robot mechanism with 3 rotational actuator shoulders and lightweight carbon-rod parallelogram linkages. Maintains a strictly parallel travelling plate throughout the workspace with high acceleration capability.
+                High-speed autonomous maze navigation robot engineered for 16&times;16 competition labyrinths. Implements real-time dynamic Flood-Fill path planning, diagonal turn profiles, multi-channel side/diagonal IR rangefinder sensing with ambient light cancellation, and micro-coreless DC drive with high-traction silicone tires.
               </p>
               <div>
-                <span class="badge-tag">Delta Robot</span>
-                <span class="badge-tag">Parallelogram Arms</span>
-                <span class="badge-tag">High-Speed Automation</span>
-                <span class="badge-tag">Parallel Mechanisms</span>
+                <span class="badge-tag">Micromouse</span>
+                <span class="badge-tag">Flood-Fill Algorithm</span>
+                <span class="badge-tag">Infrared Odometry</span>
+                <span class="badge-tag">Autonomous Navigation</span>
+                <span class="badge-tag">High-Speed Motion</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+                <a href="https://github.com/addy79/micromouse" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Maze Algorithm</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 9. 6-DOF Industrial Robot Arm -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="robot-arm-6dof">
+        <!-- 5. 4-DOF SCARA Robotic Manipulator -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-pinned" id="scara-robot">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/robot_arm_6dof.png" alt="6-DOF Industrial Robotic Arm">
+              <img src="/assets/img/scara_robot.jpg" alt="4-DOF SCARA Robotic Manipulator">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">6-DOF Industrial Robotic Arm</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('robot-arm-6dof')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">4-DOF SCARA Robotic Manipulator</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('scara-robot')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Articulated Serial Manipulator &bull; CAD &amp; Kinematics</div>
+              <div class="card-subtitle">Selective Compliance Assembly Arm &bull; Stepper Motion &bull; Kinematics</div>
               <p class="card-text">
-                Full 6-axis articulated robotic manipulator modeled with standard Denavit-Hartenberg (DH) kinematic conventions. Designed with internal cable routing passages, integrated strain-wave reducers at wrist joints, and standardized end-effector ISO tool flange.
+                Precision selective compliance articulated robot arm engineered for high-speed pick-and-place assembly. Features planar 2-link analytical kinematics, NEMA 17 stepper motors with GT2 timing belt reduction, vertical ballscrew Z-axis elevation, and pneumatic vacuum tool end-effector.
               </p>
               <div>
-                <span class="badge-tag">6-DOF</span>
-                <span class="badge-tag">Serial Manipulator</span>
-                <span class="badge-tag">DH Parameters</span>
-                <span class="badge-tag">SolidWorks</span>
-                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">SCARA</span>
+                <span class="badge-tag">Robotic Arm</span>
+                <span class="badge-tag">Analytical Kinematics</span>
+                <span class="badge-tag">NEMA 17 Steppers</span>
+                <span class="badge-tag">Ballscrew</span>
+                <span class="badge-tag">Pneumatics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+                <a href="https://github.com/addy79/scara-robot" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Kinematics &amp; CAD</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 10. Strandbeest Kinetic Mechanism -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="strandbeest">
+        <!-- 6. Digitwin1 Cyber-Physical Twin -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-robotics filter-xr filter-pinned" id="digitwin1">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/strandbeest_legs.png" alt="Strandbeest Linkage">
+              <img src="/assets/img/digitwin_actuator.jpg" alt="Digitwin1 Cyber-Physical Actuator">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Theo Jansen Walking Mechanism</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('strandbeest')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">Digitwin1 Cyber-Physical Twin</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('digitwin1')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">8-Bar Planar Walking Linkage &bull; Kinetic Mechanisms</div>
+              <div class="card-subtitle">Hardware-in-the-Loop Actuator &bull; Low-Latency UDP &bull; OpenXR</div>
               <p class="card-text">
-                Parametric model of Theo Jansen's holy numbers 8-bar walking linkage. Converts continuous rotational crank motion into a smooth, flattened ovoid foot trajectory mimicking animal stepping locomotion with minimal vertical center-of-mass fluctuation.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Theo Jansen Linkage</span>
-                <span class="badge-tag">8-Bar Mechanism</span>
-                <span class="badge-tag">Legged Locomotion</span>
-                <span class="badge-tag">Kinematics</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Linkage</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 11. Compound Planetary Gearbox -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="planetary-gearbox">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/planetary_gearbox.png" alt="Compound Planetary Gearbox">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Compound Planetary Gearbox</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('planetary-gearbox')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Epicyclic Speed Reduction Transmission &bull; CAD</div>
-              <p class="card-text">
-                Multi-stage epicyclic gearbox comprising central sun gear, multiple stepped planet gears mounted on a rigid carrier plate, and stationary internal ring gear. Provides immense torque amplification within a compact coaxial cylindrical envelope.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Epicyclic Gearing</span>
-                <span class="badge-tag">Planetary Gear</span>
-                <span class="badge-tag">Torque Density</span>
-                <span class="badge-tag">Power Transmission</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 12. Automotive 5-Speed Manual Gearbox -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="gearbox-5speed">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/gearbox_5speed.png" alt="Automotive 5-Speed Gearbox">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">5-Speed Synchromesh Gearbox</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('gearbox-5speed')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Automotive Manual Transmission &bull; Mechanical CAD</div>
-              <p class="card-text">
-                Comprehensive automotive manual transmission assembly featuring input shaft, lay-shaft gear clusters, main output shaft, brass synchronizer rings, dog teeth selector sleeves, shift forks, and reverse idler gear mechanism.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Transmission</span>
-                <span class="badge-tag">Synchromesh</span>
-                <span class="badge-tag">Dog Clutch</span>
-                <span class="badge-tag">Automotive CAD</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 13. Crossplane V8 Engine -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="v8-engine">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/v8_engine.png" alt="Crossplane V8 Engine">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Crossplane 90&deg; V8 Engine</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('v8-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Internal Combustion Engine Assembly &bull; Advanced CAD</div>
-              <p class="card-text">
-                Detailed 90-degree V8 internal combustion engine model with counterweighted crossplane crankshaft, H-beam connecting rods, domed pistons with compression ring grooves, cylinder block with oil galleries, and dual-bank valvetrain.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">V8 Engine</span>
-                <span class="badge-tag">Crossplane Crank</span>
-                <span class="badge-tag">Piston Assembly</span>
-                <span class="badge-tag">Solid Modeling</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Assembly</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 14. Inline-4 DOHC Engine -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="inline4-engine">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/inline4_engine.png" alt="Inline-4 DOHC Engine">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Inline-4 DOHC 16-Valve Engine</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('inline4-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Dual Overhead Cam Engine Architecture &bull; Mechanical CAD</div>
-              <p class="card-text">
-                High-revving 4-cylinder in-line powerplant model featuring dual overhead camshafts, direct-acting bucket tappets, 4 valves per cylinder with dual springs, flat-plane crankshaft, and baffled lower crankcase sump.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">DOHC Valvetrain</span>
-                <span class="badge-tag">Inline-4</span>
-                <span class="badge-tag">Camshaft Profiles</span>
-                <span class="badge-tag">Machined Surfaces</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 15. Wankel Rotary Engine -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="wankel-engine">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/wankel_engine.png" alt="Wankel Rotary Engine">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Wankel Rotary Engine</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('wankel-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Epitrochoid Rotor &amp; Eccentric Shaft &bull; CAD Kinematics</div>
-              <p class="card-text">
-                Parametric kinematic model of a Wankel rotary engine. Accurately traces the mathematical epitrochoidal rotor housing chamber, Reuleaux triangular rotor with combustion pockets, spring-loaded apex seal slots, internal phasing gear, and eccentric crankshaft.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Wankel Rotary</span>
-                <span class="badge-tag">Epitrochoid Math</span>
-                <span class="badge-tag">Eccentric Shaft</span>
-                <span class="badge-tag">Apex Seals</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 16. Dual-Spool Jet Engine -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="jet-engine">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/jet_engine.png" alt="Jet Engine Assembly">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Dual-Spool Jet Engine Cutaway</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('jet-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Aerospace Turbomachinery Assembly &bull; CAD</div>
-              <p class="card-text">
-                Multi-stage axial-flow jet engine cutaway. Features concentric low-pressure and high-pressure coaxial spools, bladed rotor disks with 3D twisted airfoil sections, aerodynamic stator vane stages, reverse-flow annular combustion chamber, and convergent exhaust nozzle.
-              </p>
-              <div>
-                <span class="badge-tag">Turbomachinery</span>
-                <span class="badge-tag">Axial Compressor</span>
-                <span class="badge-tag">Aerospace CAD</span>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Airfoil Blading</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 17. Automotive Differential -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="differential">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/differential.png" alt="Automotive Differential">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Open Bevel Gear Differential</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('differential')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Automotive Drivetrain Torque Distribution &bull; CAD</div>
-              <p class="card-text">
-                Open bevel gear differential assembly for automotive rear-axle drivetrains. Accurately constrains hypoid ring gear and drive pinion mesh, dual planetary spider bevel gears, side output gears, and differential carrier cage.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Differential</span>
-                <span class="badge-tag">Bevel Gears</span>
-                <span class="badge-tag">Drivetrain</span>
-                <span class="badge-tag">Torque Splitting</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 18. Globoid Hourglass Worm Gear -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="globoid-worm">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/globoid_worm.png" alt="Globoid Worm Gear">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Globoid Hourglass Worm Drive</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('globoid-worm')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Double-Enveloping High-Contact Gearbox &bull; CAD</div>
-              <p class="card-text">
-                Double-enveloping globoid worm drive mechanism where the worm waist conforms concavely to the radius of the mating worm wheel. Yields multiple teeth in simultaneous contact, distributing shock loads across 3x greater surface area than standard cylindrical worms.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Globoid Worm</span>
-                <span class="badge-tag">Double Enveloping</span>
-                <span class="badge-tag">High Contact Ratio</span>
-                <span class="badge-tag">Heavy Load</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 19. High-Reduction Worm Drive -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="worm-drive">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/worm_drive.png" alt="Worm Drive Gearbox">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Self-Locking Worm Gearbox</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('worm-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">High-Ratio Non-Backdrivable Transmission &bull; CAD</div>
-              <p class="card-text">
-                Precision single-start cylindrical worm shaft meshing with a bronze alloy helical worm wheel. Engineered with a lead angle below the static friction threshold to guarantee self-locking capability for hoists, cranes, and robotics joints without electric brakes.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Worm Gearing</span>
-                <span class="badge-tag">Self-Locking</span>
-                <span class="badge-tag">High Ratio</span>
-                <span class="badge-tag">Precision Lead</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 20. Geneva Drive Mechanism -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="geneva-drive">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/geneva_drive.png" alt="Geneva Drive Mechanism">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Geneva Indexing Mechanism</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('geneva-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Intermittent Motion Indexing &bull; Kinematic Synthesis</div>
-              <p class="card-text">
-                Classical external 4-slot Geneva wheel (Maltese cross) paired with an eccentric drive pin disc and locking crescent ring. Converts continuous rotary input into precise, jerk-minimized intermittent rotational steps for automated tool changers and rotary index tables.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Geneva Cross</span>
-                <span class="badge-tag">Intermittent Motion</span>
-                <span class="badge-tag">Cam Indexer</span>
-                <span class="badge-tag">Kinematics</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 21. Slider-Crank Mechanism -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="crank-mechanism">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/crank_mechanism.png" alt="Slider Crank Linkage">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Slider-Crank Kinematic Linkage</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('crank-mechanism')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Planar Four-Bar Inversion Linkage &bull; Dynamic Balancing</div>
-              <p class="card-text">
-                Mathematical parametric slider-crank linkage with integrated counterweighted crank disk, connecting rod, and linear crosshead slider. Solves second-order piston acceleration and side-thrust reaction forces throughout a full 360-degree crank cycle.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Slider Crank</span>
-                <span class="badge-tag">Kinematic Analysis</span>
-                <span class="badge-tag">Dynamic Balancing</span>
-                <span class="badge-tag">Mechanisms</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 22. Involute Spur & Helical Gears -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="gears-involute">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/gears_involute.png" alt="Parametric Involute Gears">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Parametric Involute Gears</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('gears-involute')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">True Involute Tooth Geometry Generator &bull; FreeCAD</div>
-              <p class="card-text">
-                Mathematically exact involute profile generator for spur, helical, and herringbone gears. Parameterizes module, pressure angle, tooth addendum/dedendum, profile shift coefficient (x-factor), and trochoidal root fillet radii to avoid tooth undercut.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Involute Curve</span>
-                <span class="badge-tag">Gear Geometry</span>
-                <span class="badge-tag">Helical Mesh</span>
-                <span class="badge-tag">Profile Shift</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 23. Deep-Groove Ball Bearing Assembly -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="ball-bearing">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/ball_bearing.png" alt="Ball Bearing Assembly">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Deep-Groove Ball Bearing</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('ball-bearing')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">ISO Standard Rolling Element Bearing &bull; CAD &amp; Tolerances</div>
-              <p class="card-text">
-                Precision model of an ISO standard deep-groove ball bearing with inner ring raceway, outer ring, hardened steel rolling balls, and a riveted two-piece stamped steel Conrad cage. Parameterized for standard shaft fit classes (g6, h6, k5) and housing limits.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">Ball Bearing</span>
-                <span class="badge-tag">Conrad Cage</span>
-                <span class="badge-tag">ISO Tolerances</span>
-                <span class="badge-tag">Tribology</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 24. Tourbillon Escapement -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="tourbillon">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/tourbillon.png" alt="Tourbillon CAD Assembly">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Tourbillon Horological Escapement</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('tourbillon')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">High-Precision Watchmaking Complication &bull; Horology CAD</div>
-              <p class="card-text">
-                Complex mechanical horological assembly that houses the balance wheel, hairspring, pallet fork, and escape wheel inside a rotating lightweight titanium cage. Continuously revolves once per minute to neutralize positional rate variations caused by Earth's gravity.
-              </p>
-              <div>
-                <span class="badge-tag">Horology</span>
-                <span class="badge-tag">Tourbillon</span>
-                <span class="badge-tag">Escapement</span>
-                <span class="badge-tag">Micro-Mechanics</span>
-                <span class="badge-tag">FreeCAD</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 25. Gyroid TPMS Lattice -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="gyroid-lattice">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/gyroid_lattice.png" alt="Gyroid TPMS Lattice">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Gyroid TPMS Lightweight Matrix</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('gyroid-lattice')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Triply Periodic Minimal Surface &bull; Additive Metamaterials</div>
-              <p class="card-text">
-                Mathematical modeling of a Triply Periodic Minimal Surface (TPMS) Gyroid unit cell and tiled porous structural core. Delivers an optimal stiffness-to-weight ratio, zero internal stress concentrations, self-supporting geometry for 3D additive printing, and high energy absorption.
-              </p>
-              <div>
-                <span class="badge-tag">FreeCAD</span>
-                <span class="badge-tag">TPMS Gyroid</span>
-                <span class="badge-tag">Additive Design</span>
-                <span class="badge-tag">Lightweighting</span>
-                <span class="badge-tag">Minimal Surfaces</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 26. VRMechanics -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="vrmechanics">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/vrmechanics.png" alt="VRMechanics Teardown Lab">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">VRMechanics</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('vrmechanics')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Immersive Mechanical Teardown &amp; Inspection Trainer &bull; XR Era</div>
-              <p class="card-text">
-                Interactive spatial VR laboratory built in Godot with OpenXR support. Students and engineers physically disassemble and inspect complex assemblies: a precision Cycloidal Gearbox, an Electric Motor, a 6-DOF Industrial Robot Arm, a VR Headset, and a Modern Smartphone with exploded views and step-by-step assembly sequences.
+                Hardware-in-the-loop (HIL) 1-DOF robotic actuator digital twin connecting a physical actuator and encoder test stand with an OpenXR spatial simulation in Godot. Streams real-time encoder angles, torque setpoints, dynamic limits, and automated safety interlocks over low-latency UDP sockets.
               </p>
               <div>
                 <span class="badge-tag">Godot</span>
                 <span class="badge-tag">OpenXR</span>
-                <span class="badge-tag">VR Training</span>
-                <span class="badge-tag">Kinematics</span>
-                <span class="badge-tag">Spatial UI</span>
+                <span class="badge-tag">Raspberry Pi</span>
+                <span class="badge-tag">UDP Bridge</span>
+                <span class="badge-tag">Python Daemon</span>
+                <span class="badge-tag">Control Systems</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+                <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 27. VRFields -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-xr" id="vrfields">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/coassembly_vr.png" alt="VRFields Simulation">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">VRFields: Maxwell Vector Engine</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('vrfields')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">GPU-Accelerated Electromagnetic Spatial Engine &bull; XR Era</div>
-              <p class="card-text">
-                GPU compute and fragment shader-accelerated vector field engine rendering 3D magnetic flux lines, Coulomb electrostatic potentials, and dynamic particle advection under Lorentz forces in OpenXR virtual reality with interactive physical probes.
-              </p>
-              <div>
-                <span class="badge-tag">Godot</span>
-                <span class="badge-tag">OpenXR</span>
-                <span class="badge-tag">GPU Shaders</span>
-                <span class="badge-tag">Electromagnetism</span>
-                <span class="badge-tag">Physics</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/vrfields" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 28. CoAssembly VR -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="coassembly">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/coassembly_vr.png" alt="CoAssembly Collaborative Lab">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">CoAssembly: Networked Spatial Lab</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('coassembly')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Multi-User Collaborative Engineering Workspace &bull; XR Era</div>
-              <p class="card-text">
-                Multi-user networked spatial workspace in Godot enabling distributed engineers to jointly manipulate, inspect, and evaluate full-scale mechanical assemblies in real time with synchronized inverse kinematics and spatial audio.
-              </p>
-              <div>
-                <span class="badge-tag">Godot</span>
-                <span class="badge-tag">OpenXR</span>
-                <span class="badge-tag">Multiplayer Sockets</span>
-                <span class="badge-tag">Spatial Audio</span>
-                <span class="badge-tag">Collaborative CAD</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 29. Autonomous Line-Following Bot -->
+        <!-- 7. Autonomous Line-Tracking Robot -->
         <div class="col-lg-6 mb-4 project-grid-item filter-robotics" id="line-follower">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/robot_arm_6dof.png" alt="Autonomous Robotics Bot">
+              <img src="/assets/img/robot_arm_6dof.png" alt="Autonomous Line-Tracking Robot">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
@@ -931,7 +302,7 @@
           </div>
         </div>
 
-        <!-- 30. Ultrasonic Obstacle Rover -->
+        <!-- 8. Ultrasonic Autonomous Rover -->
         <div class="col-lg-6 mb-4 project-grid-item filter-robotics" id="obstacle-rover">
           <div class="project-card">
             <div class="img-wrapper">
@@ -960,7 +331,540 @@
           </div>
         </div>
 
-        <!-- 31. Racer3D -->
+        <!-- 9. BrushlessLab Test Bench -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="brushlesslab">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/brushless_bench.png" alt="BrushlessLab Test Stand">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">BrushlessLab: 3-Phase BLDC Bench</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('brushlesslab')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">3-Phase BLDC Motor Diagnostics &amp; Characterization Bench &bull; XR Era</div>
+              <p class="card-text">
+                Virtual diagnostic and characterization bench for brushless direct-current (BLDC) actuators. Features 6 distinct diagnostic stations: milliohm winding resistance validation, back-EMF waveform scope visualization, Hall sensor timing calibration, dynamic dynamometer loading, and bearing envelope wear analysis.
+              </p>
+              <div>
+                <span class="badge-tag">BLDC Motors</span>
+                <span class="badge-tag">Actuators</span>
+                <span class="badge-tag">Oscilloscope</span>
+                <span class="badge-tag">Motor Diagnostics</span>
+                <span class="badge-tag">Godot</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- 2. ACTUATOR TRANSMISSIONS & MECHANISMS (CAD)   -->
+        <!-- ============================================== -->
+
+        <!-- 10. BLDC Outrunner Motor -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="bldc-outrunner">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/bldc_outrunner.png" alt="BLDC Outrunner Motor Assembly">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">BLDC Outrunner Motor</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('bldc-outrunner')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">High-Torque Density Brushless Actuator Assembly &bull; CAD &amp; Mechatronics</div>
+              <p class="card-text">
+                Precision electro-mechanical CAD model of a 12S14P brushless DC outrunner motor. Models the slotted stator laminations, high-grade NdFeB curved permanent magnet ring, dynamic rotor bell with cooling vents, dual ball bearing seating, and motor shaft press-fit constraints.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">BLDC Outrunner</span>
+                <span class="badge-tag">Electromagnetics</span>
+                <span class="badge-tag">Stator Laminations</span>
+                <span class="badge-tag">Motor CAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Harmonic & Strain-Wave Reducers -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="harmonic-drive">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/harmonic_drive.png" alt="Harmonic Drive CAD">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Harmonic Strain-Wave Reducer</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('harmonic-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Zero-Backlash High-Ratio Robotic Transmission &bull; Precision CAD</div>
+              <p class="card-text">
+                Parametric design of strain-wave (harmonic) gearing featuring an elliptical wave generator bearing, flexible external-toothed cup spline (flexspline), and rigid internal circular spline. Engineered for compact, high-reduction-ratio robotic joints requiring zero mechanical backlash.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Strain Wave</span>
+                <span class="badge-tag">Flexspline</span>
+                <span class="badge-tag">Zero Backlash</span>
+                <span class="badge-tag">Robotics Joint</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Cycloidal Drive -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="cycloidal-drive">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/cycloidal_drive.png" alt="Cycloidal Drive CAD">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Epicycloidal Speed Reducer</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('cycloidal-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">High-Shock-Load Zero-Backlash Actuator Reducer &bull; Precision CAD</div>
+              <p class="card-text">
+                Fully parameterized cycloidal drive generator based on mathematical epicycloid lobe formulas. Features dual 180&deg;-offset cycloidal discs for dynamic rotational balance, needle roller pins in the ring housing, and output carrier pins with low-friction roller sleeves.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Cycloidal Drive</span>
+                <span class="badge-tag">Epicycloid Math</span>
+                <span class="badge-tag">Needle Rollers</span>
+                <span class="badge-tag">Dynamic Balance</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> CAD Models</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Stewart Hexapod Platform -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="stewart-platform">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/stewart_platform.png" alt="Stewart Platform Kinematics">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Stewart Hexapod Platform</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('stewart-platform')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">6-DOF Parallel Kinematic Platform &bull; Robotics &amp; CAD</div>
+              <p class="card-text">
+                Mathematical parametric assembly of a 6-DOF Stewart Gough hexapod platform. Features 6 variable-stroke prismatic actuators coupled to universal and spherical joints between a fixed base and mobile top platform, supporting closed-form inverse kinematics computation.
+              </p>
+              <div>
+                <span class="badge-tag">Parallel Kinematics</span>
+                <span class="badge-tag">Hexapod</span>
+                <span class="badge-tag">Stewart Platform</span>
+                <span class="badge-tag">6-DOF</span>
+                <span class="badge-tag">FreeCAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Delta Parallel Robot -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="delta-robot">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/delta_robot.png" alt="Delta Parallel Robot">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Delta 3-DOF Parallel Robot</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('delta-robot')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">High-Speed Pick-and-Place Manipulator &bull; Robotics &amp; CAD</div>
+              <p class="card-text">
+                High-speed industrial Delta robot mechanism with 3 rotational actuator shoulders and lightweight carbon-rod parallelogram linkages. Maintains a strictly parallel travelling plate throughout the workspace with high acceleration capability.
+              </p>
+              <div>
+                <span class="badge-tag">Delta Robot</span>
+                <span class="badge-tag">Parallelogram Arms</span>
+                <span class="badge-tag">High-Speed Automation</span>
+                <span class="badge-tag">Parallel Mechanisms</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. 6-DOF Industrial Robot Arm -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="robot-arm-6dof">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/robot_arm_6dof.png" alt="6-DOF Industrial Robotic Arm">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">6-DOF Industrial Robotic Arm</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('robot-arm-6dof')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Articulated Serial Manipulator &bull; CAD &amp; Kinematics</div>
+              <p class="card-text">
+                Full 6-axis articulated robotic manipulator modeled with standard Denavit-Hartenberg (DH) kinematic conventions. Designed with internal cable routing passages, integrated strain-wave reducers at wrist joints, and standardized end-effector ISO tool flange.
+              </p>
+              <div>
+                <span class="badge-tag">6-DOF</span>
+                <span class="badge-tag">Serial Manipulator</span>
+                <span class="badge-tag">DH Parameters</span>
+                <span class="badge-tag">SolidWorks</span>
+                <span class="badge-tag">FreeCAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. Compound Planetary Gearbox -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="planetary-gearbox">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/planetary_gearbox.png" alt="Compound Planetary Gearbox">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Compound Planetary Gearbox</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('planetary-gearbox')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Epicyclic Speed Reduction Transmission &bull; CAD</div>
+              <p class="card-text">
+                Multi-stage epicyclic gearbox comprising central sun gear, multiple stepped planet gears mounted on a rigid carrier plate, and stationary internal ring gear. Provides immense torque amplification within a compact coaxial cylindrical envelope.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Epicyclic Gearing</span>
+                <span class="badge-tag">Planetary Gear</span>
+                <span class="badge-tag">Torque Density</span>
+                <span class="badge-tag">Power Transmission</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17. Automotive 5-Speed Manual Gearbox -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="gearbox-5speed">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/gearbox_5speed.png" alt="Automotive 5-Speed Gearbox">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">5-Speed Synchromesh Gearbox</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('gearbox-5speed')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Automotive Manual Transmission &bull; Mechanical CAD</div>
+              <p class="card-text">
+                Comprehensive automotive manual transmission assembly featuring input shaft, lay-shaft gear clusters, main output shaft, brass synchronizer rings, dog teeth selector sleeves, shift forks, and reverse idler gear mechanism.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Transmission</span>
+                <span class="badge-tag">Synchromesh</span>
+                <span class="badge-tag">Dog Clutch</span>
+                <span class="badge-tag">Automotive CAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18. Crossplane V8 Engine -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="v8-engine">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/v8_engine.png" alt="Crossplane V8 Engine">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Crossplane 90&deg; V8 Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('v8-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Internal Combustion Engine Assembly &bull; Advanced CAD</div>
+              <p class="card-text">
+                Detailed 90-degree V8 internal combustion engine model with counterweighted crossplane crankshaft, H-beam connecting rods, domed pistons with compression ring grooves, cylinder block with oil galleries, and dual-bank valvetrain.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">V8 Engine</span>
+                <span class="badge-tag">Crossplane Crank</span>
+                <span class="badge-tag">Piston Assembly</span>
+                <span class="badge-tag">Solid Modeling</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Assembly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19. Inline-4 DOHC Engine -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="inline4-engine">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/inline4_engine.png" alt="Inline-4 DOHC Engine">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Inline-4 DOHC 16-Valve Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('inline4-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Dual Overhead Cam Engine Architecture &bull; Mechanical CAD</div>
+              <p class="card-text">
+                High-revving 4-cylinder in-line powerplant model featuring dual overhead camshafts, direct-acting bucket tappets, 4 valves per cylinder with dual springs, flat-plane crankshaft, and baffled lower crankcase sump.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">DOHC Valvetrain</span>
+                <span class="badge-tag">Inline-4</span>
+                <span class="badge-tag">Camshaft Profiles</span>
+                <span class="badge-tag">Machined Surfaces</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20. Wankel Rotary Engine -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="wankel-engine">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/wankel_engine.png" alt="Wankel Rotary Engine">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Wankel Rotary Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('wankel-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Epitrochoid Rotor &amp; Eccentric Shaft &bull; CAD Kinematics</div>
+              <p class="card-text">
+                Parametric kinematic model of a Wankel rotary engine. Accurately traces the mathematical epitrochoidal rotor housing chamber, Reuleaux triangular rotor with combustion pockets, spring-loaded apex seal slots, internal phasing gear, and eccentric crankshaft.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Wankel Rotary</span>
+                <span class="badge-tag">Epitrochoid Math</span>
+                <span class="badge-tag">Eccentric Shaft</span>
+                <span class="badge-tag">Apex Seals</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Model</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 21. Dual-Spool Jet Engine -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="jet-engine">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/jet_engine.png" alt="Jet Engine Assembly">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Dual-Spool Jet Engine Cutaway</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('jet-engine')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Aerospace Turbomachinery Assembly &bull; CAD</div>
+              <p class="card-text">
+                Multi-stage axial-flow jet engine cutaway. Features concentric low-pressure and high-pressure coaxial spools, bladed rotor disks with 3D twisted airfoil sections, aerodynamic stator vane stages, reverse-flow annular combustion chamber, and convergent exhaust nozzle.
+              </p>
+              <div>
+                <span class="badge-tag">Turbomachinery</span>
+                <span class="badge-tag">Axial Compressor</span>
+                <span class="badge-tag">Aerospace CAD</span>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Airfoil Blading</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 22. Tourbillon Escapement -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="tourbillon">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/tourbillon.png" alt="Tourbillon CAD Assembly">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Tourbillon Horological Escapement</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('tourbillon')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">High-Precision Watchmaking Complication &bull; Horology CAD</div>
+              <p class="card-text">
+                Complex mechanical horological assembly that houses the balance wheel, hairspring, pallet fork, and escape wheel inside a rotating lightweight titanium cage. Continuously revolves once per minute to neutralize positional rate variations caused by Earth's gravity.
+              </p>
+              <div>
+                <span class="badge-tag">Horology</span>
+                <span class="badge-tag">Tourbillon</span>
+                <span class="badge-tag">Escapement</span>
+                <span class="badge-tag">Micro-Mechanics</span>
+                <span class="badge-tag">FreeCAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Inspect Assembly</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 23. Strandbeest Kinetic Mechanism -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="strandbeest">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/strandbeest_legs.png" alt="Strandbeest Linkage">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Theo Jansen Walking Mechanism</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('strandbeest')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">8-Bar Planar Walking Linkage &bull; Kinetic Mechanisms</div>
+              <p class="card-text">
+                Parametric model of Theo Jansen's holy numbers 8-bar walking linkage. Converts continuous rotational crank motion into a smooth, flattened ovoid foot trajectory mimicking animal stepping locomotion with minimal vertical center-of-mass fluctuation.
+              </p>
+              <div>
+                <span class="badge-tag">FreeCAD</span>
+                <span class="badge-tag">Theo Jansen Linkage</span>
+                <span class="badge-tag">8-Bar Mechanism</span>
+                <span class="badge-tag">Legged Locomotion</span>
+                <span class="badge-tag">Kinematics</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View Linkage</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- 3. XR & SPATIAL COMPUTING SIMULATION           -->
+        <!-- ============================================== -->
+
+        <!-- 24. VRMechanics -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="vrmechanics">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/vrmechanics.png" alt="VRMechanics Teardown Lab">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">VRMechanics</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('vrmechanics')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Immersive Mechanical Teardown &amp; Inspection Trainer &bull; XR Era</div>
+              <p class="card-text">
+                Interactive spatial VR laboratory built in Godot with OpenXR support. Students and engineers physically disassemble and inspect complex assemblies: a precision Cycloidal Gearbox, an Electric Motor, a 6-DOF Industrial Robot Arm, a VR Headset, and a Modern Smartphone with exploded views and step-by-step assembly sequences.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">VR Training</span>
+                <span class="badge-tag">Kinematics</span>
+                <span class="badge-tag">Spatial UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 25. VRFields -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr" id="vrfields">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/coassembly_vr.png" alt="VRFields Simulation">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">VRFields: Maxwell Vector Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('vrfields')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">GPU-Accelerated Electromagnetic Spatial Engine &bull; XR Era</div>
+              <p class="card-text">
+                GPU compute and fragment shader-accelerated vector field engine rendering 3D magnetic flux lines, Coulomb electrostatic potentials, and dynamic particle advection under Lorentz forces in OpenXR virtual reality with interactive physical probes.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">GPU Shaders</span>
+                <span class="badge-tag">Electromagnetism</span>
+                <span class="badge-tag">Physics</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/vrfields" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 26. CoAssembly VR -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="coassembly">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/coassembly_vr.png" alt="CoAssembly Collaborative Lab">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">CoAssembly: Networked Spatial Lab</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('coassembly')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Multi-User Collaborative Engineering Workspace &bull; XR Era</div>
+              <p class="card-text">
+                Multi-user networked spatial workspace in Godot enabling distributed engineers to jointly manipulate, inspect, and evaluate full-scale mechanical assemblies in real time with synchronized inverse kinematics and spatial audio.
+              </p>
+              <div>
+                <span class="badge-tag">Godot</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">Multiplayer Sockets</span>
+                <span class="badge-tag">Spatial Audio</span>
+                <span class="badge-tag">Collaborative CAD</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============================================== -->
+        <!-- 4. EARLY GAMES & PHYSICS ENGINES               -->
+        <!-- ============================================== -->
+
+        <!-- 27. Racer3D -->
         <div class="col-lg-6 mb-4 project-grid-item filter-games" id="racer3d">
           <div class="project-card">
             <div class="img-wrapper">
@@ -988,7 +892,7 @@
           </div>
         </div>
 
-        <!-- 32. Tower Defense Engine -->
+        <!-- 28. Tower Defense Engine -->
         <div class="col-lg-6 mb-4 project-grid-item filter-games" id="tower-defense">
           <div class="project-card">
             <div class="img-wrapper">
@@ -1016,7 +920,7 @@
           </div>
         </div>
 
-        <!-- 33. Asteroid Storm -->
+        <!-- 29. Asteroid Storm -->
         <div class="col-lg-6 mb-4 project-grid-item filter-games" id="asteroid-storm">
           <div class="project-card">
             <div class="img-wrapper">
@@ -1044,7 +948,7 @@
           </div>
         </div>
 
-        <!-- 34. Dungeon Crawler -->
+        <!-- 30. Dungeon Crawler -->
         <div class="col-lg-6 mb-4 project-grid-item filter-games" id="dungeon-crawler">
           <div class="project-card">
             <div class="img-wrapper">
@@ -1072,7 +976,7 @@
           </div>
         </div>
 
-        <!-- 35. 2D Platformer Engine -->
+        <!-- 31. 2D Platformer Engine -->
         <div class="col-lg-6 mb-4 project-grid-item filter-games" id="platformer-engine">
           <div class="project-card">
             <div class="img-wrapper">

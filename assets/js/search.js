@@ -4,16 +4,40 @@
 
 const SEARCH_INDEX = [
   {
+    title: "Pioneer ROV: Underwater Exploration Submersible (Team Leader)",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#pioneer-rov",
+    keywords: "rov underwater robotics aui robotics club pioneer telemetry thruster control marine team leader"
+  },
+  {
+    title: "Self-Balancing Inverted Pendulum Robot (STM32 & Kalman Filter)",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#self-balancing",
+    keywords: "self-balancing robot inverted pendulum stm32 mpu6050 kalman filter cascaded pid motor control encoders"
+  },
+  {
+    title: "12-DOF Quadruped Locomotion Walking Robot",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#quadruped",
+    keywords: "quadruped 12-dof robot walking trotting legged locomotion inverse kinematics bezier curves imu stabilization"
+  },
+  {
+    title: "Autonomous Micromouse Maze Solver (Flood-Fill)",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#micromouse",
+    keywords: "micromouse maze solver flood-fill algorithm autonomous navigation infrared sensors competition"
+  },
+  {
+    title: "4-DOF SCARA Robotic Assembly Manipulator",
+    category: "Robotics & Autonomous Systems",
+    url: "/projects/#scara-robot",
+    keywords: "scara robot arm selective compliance manipulator nema 17 stepper ballscrew timing belt pick place"
+  },
+  {
     title: "Digitwin1: Hardware-in-the-Loop Cyber-Physical Digital Twin",
     category: "Cyber-Physical Bridge",
     url: "/projects/#digitwin1",
     keywords: "godot openxr raspberry pi udp actuator digital twin hil robotics controls hardware python"
-  },
-  {
-    title: "Pioneer ROV: Underwater Exploration Submersible (Team Leader)",
-    category: "Robotics Era",
-    url: "/projects/#pioneer-rov",
-    keywords: "rov underwater robotics aui robotics club pioneer telemetry thruster control marine team leader"
   },
   {
     title: "BrushlessLab: 3-Phase BLDC Motor Diagnostic Bench",
