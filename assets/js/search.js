@@ -184,6 +184,36 @@ const SEARCH_INDEX = [
     keywords: "autonomous rover ultrasonic hc-sr04 obstacle avoidance servo arduino"
   },
   {
+    title: "Self-Balancing Inverted Pendulum Robot (Kalman Filter)",
+    category: "Robotics & Controls",
+    url: "/#timeline",
+    keywords: "self balancing robot inverted pendulum stm32 mpu6050 kalman filter pid control motor encoders"
+  },
+  {
+    title: "Autonomous Micromouse Maze Solver (Flood-Fill)",
+    category: "Robotics & Algorithms",
+    url: "/#timeline",
+    keywords: "micromouse maze solver flood-fill algorithm infrared odometry pathfinding robotics"
+  },
+  {
+    title: "SCARA 4-DOF Assembly Manipulator",
+    category: "Robotics & Kinematics",
+    url: "/#timeline",
+    keywords: "scara robot arm selective compliance kinematics pick and place stepper drivers"
+  },
+  {
+    title: "12-DOF Quadruped Locomotion Platform (Gait Dynamics)",
+    category: "Robotics & Locomotion",
+    url: "/#timeline",
+    keywords: "quadruped robot 12-dof bezier curve trot gait inverse kinematics walking robot"
+  },
+  {
+    title: "Interactive Cyber Terminal (Console / CLI)",
+    category: "Interactive",
+    url: "/#terminal-body",
+    keywords: "terminal console cli hacker prompt status robots bridge stack commands"
+  },
+  {
     title: "Racer3D: Raycast Vehicle Dynamics Simulation",
     category: "Games & Systems",
     url: "/projects/#racer3d",

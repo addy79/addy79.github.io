@@ -91,6 +91,17 @@
       </div>
     </div>
 
+    <!-- Live Telemetry Strip (Alive & Real-Time) -->
+    <div class="telemetry-strip">
+      <div class="telemetry-item"><span class="live-pulse-red"></span> <span class="telemetry-label">SYSTEM:</span> ONLINE</div>
+      <div class="telemetry-sep">/</div>
+      <div class="telemetry-item"><i class="fa-solid fa-water text-danger"></i> <span class="telemetry-label">ACTIVE MISSION:</span> Pioneer ROV (Team Leader &amp; Mechatronics)</div>
+      <div class="telemetry-sep">/</div>
+      <div class="telemetry-item"><i class="fa-solid fa-microchip text-danger"></i> <span class="telemetry-label">HIL BRIDGE:</span> Digitwin1 Telemetry Active</div>
+      <div class="telemetry-sep">/</div>
+      <div class="telemetry-item"><i class="fa-solid fa-location-crosshairs text-danger"></i> <span class="telemetry-label">BASE:</span> AUI &bull; Ifrane, Morocco</div>
+    </div>
+
     <div class="post">
       <article>
         <!-- Floating Profile Card -->
@@ -99,9 +110,9 @@
             <img src="/assets/img/profile.jpg" alt="Asmae El Harti" class="profile-img">
             <h5 class="mb-1 font-weight-bold">Asmae El Harti</h5>
             <div class="more-info">
-              <p><i class="fa-solid fa-building-columns mr-1 text-primary"></i> Al Akhawayn University (AUI)</p>
-              <p><i class="fa-solid fa-graduation-cap mr-1 text-primary"></i> General Engineering &bull; Mechatronics ('27)</p>
-              <p><i class="fa-solid fa-location-dot mr-1 text-primary"></i> Ifrane, Morocco</p>
+              <p><i class="fa-solid fa-building-columns mr-1 text-danger"></i> Al Akhawayn University (AUI)</p>
+              <p><i class="fa-solid fa-graduation-cap mr-1 text-danger"></i> General Engineering &bull; Mechatronics ('27)</p>
+              <p><i class="fa-solid fa-location-dot mr-1 text-danger"></i> Ifrane, Morocco</p>
             </div>
             <div class="social-icons">
               <a href="mailto:a.elharti@aui.ma" title="Email: a.elharti@aui.ma"><i class="fa-solid fa-envelope"></i></a>
@@ -118,11 +129,49 @@
             I am a <strong>General Engineering student specializing in Mechatronics</strong> at <a href="http://www.aui.ma" target="_blank" rel="noopener noreferrer">Al Akhawayn University in Ifrane</a> (Class of 2027).
           </p>
           <p>
-            I don't just design mechanical CAD or write simulation scripts in isolation—<strong>I build where they collide</strong>. My passion lies in taking a complex, multidisciplinary problem and engineering a tangible, working solution from scratch. From mathematically deriving the epicyclic tooth profiles of custom cycloidal reducers, to flashing embedded firmware onto microcontrollers and single-board computers, to synchronizing physical hardware telemetry into spatial virtual reality in real-time.
+            I don't just design mechanical CAD or write simulation scripts in isolation—<strong>I build where they collide</strong>. My passion lies in taking a complex, multidisciplinary problem and engineering a tangible, working solution from scratch: mathematically deriving epicyclic tooth profiles for zero-backlash reducers, flashing firmware onto microcontrollers, and synchronizing physical hardware telemetry into spatial virtual reality in real-time.
           </p>
           <p>
-            Over the years, I have actively developed hundreds of projects across games, autonomous robotics, parametric mechanism design, and spatial simulation.
+            From underwater competition submersibles to classical self-balancing rovers, micromouse maze solvers, and parametric kinematic mechanisms, I engineer machines that move, think, and endure.
           </p>
+        </div>
+
+        <!-- Interactive Cyber Terminal -->
+        <div class="cyber-terminal">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <div class="terminal-title"><i class="fa-solid fa-terminal mr-1 text-danger"></i> asmae@aui-mechatronics ~ console</div>
+            <div class="terminal-status"><span class="live-pulse-red" style="width:7px; height:7px;"></span></div>
+          </div>
+          <div class="terminal-body" id="terminal-body">
+            <div class="terminal-text-dim">Antigravity Mechatronics Kernel v4.2.0-rel [x86_64-linux]</div>
+            <div class="terminal-text-dim">Type <span class="terminal-text-red">help</span> or click quick command chips below to inspect systems.</div>
+            <div class="terminal-output-block mt-2">
+              <div class="terminal-cmd-echo"><span class="terminal-text-red">asmae@aui-mechatronics:~$</span> asmae --status</div>
+              <div><span class="terminal-text-success">[TELEMETRY STATUS: NOMINAL]</span>
+  • <span class="terminal-text-bold">Operator:</span> Asmae El Harti — General Engineer • Mechatronics
+  • <span class="terminal-text-bold">Base:</span> Al Akhawayn University in Ifrane (AUI, Class of '27)
+  • <span class="terminal-text-bold">Current Mission:</span> Pioneer ROV Team Leader &amp; Mechatronics Engineer
+  • <span class="terminal-text-bold">Active Bridge:</span> Digitwin1 OpenXR spatial sync via sub-millisecond UDP sockets</div>
+            </div>
+          </div>
+          <div class="terminal-prompt-chips">
+            <span class="terminal-chip-label">Quick Commands:</span>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --status')">asmae --status</button>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --robots')">asmae --robots</button>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --bridge')">asmae --bridge</button>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --stack')">asmae --stack</button>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('asmae --contact')">asmae --contact</button>
+            <button class="terminal-prompt-chip" onclick="runTerminalChip('clear')" style="color:#94a3b8;">clear</button>
+          </div>
+          <div class="terminal-input-row">
+            <span class="terminal-prompt-label">asmae@aui:~$</span>
+            <input type="text" id="terminal-cmd-input" class="terminal-input" placeholder="type 'help', 'robots', 'bridge', or 'stack' and hit Enter..." autocomplete="off" spellcheck="false">
+          </div>
         </div>
 
         <!-- Tools of the Trade (josephojo style capsules) -->
@@ -212,15 +261,16 @@
               <span class="era-age">~Age 12 &ndash; 20</span>
             </div>
             <p class="era-desc">
-              Stepped into physical hardware at 12: engineered Arduino line-following bots, obstacle-avoiding rovers using ultrasonic distance sensors, remote-controlled vehicles, and custom sensor rigs. Currently serving as <strong>Team Leader &amp; Mechatronics Engineer</strong> for the <strong>Pioneer ROV</strong> underwater exploration submersible competing in this year's marine robotics challenge.
+              Stepped into physical hardware at 12: engineered autonomous line-followers, ultrasonic obstacle rovers, and custom sensor rigs. Built classical mechatronics milestones including two-wheeled self-balancing inverted pendulums (Kalman filter/PID), micromouse maze solvers (Flood-Fill algorithm), 4-DOF SCARA manipulators, and 12-DOF quadruped walking gaits. Currently serving as <strong>Team Leader &amp; Mechatronics Engineer</strong> for the <strong>Pioneer ROV</strong> underwater exploration submersible competing in this year's marine robotics challenge.
             </p>
             <div class="era-chips">
               <span class="era-chip">ROV Team Leader</span>
+              <span class="era-chip">Self-Balancing Robot</span>
+              <span class="era-chip">Micromouse Maze Solver</span>
+              <span class="era-chip">SCARA Manipulator</span>
+              <span class="era-chip">12-DOF Quadruped</span>
+              <span class="era-chip">Kalman Filter &amp; PID</span>
               <span class="era-chip">Microcontrollers</span>
-              <span class="era-chip">Line Followers</span>
-              <span class="era-chip">Obstacle Avoidance</span>
-              <span class="era-chip">Sensor Rigs</span>
-              <span class="era-chip">3D Printed Chassis</span>
             </div>
           </div>
 
