@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Engineering Projects | Asmae El Harti</title>
+  <title>Engineering Portfolio | Asmae El Harti</title>
   <meta name="author" content="Asmae El Harti">
-  <meta name="description" content="Engineering projects by Asmae El Harti: Digital Twins, Mechatronics, FreeCAD Mechanisms, and Embedded Robotics.">
+  <meta name="description" content="Engineering projects by Asmae El Harti: Cyber-Physical Digital Twins, Mechatronics, 44 FreeCAD Mechanisms, OpenXR VR, and Robotics.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
@@ -55,10 +55,10 @@
               <a class="nav-link" href="/projects/">projects <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/publications/">publications</a>
+              <a class="nav-link" href="/cv/">cv</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/cv/">cv</a>
+              <a class="nav-link" href="/#contact">contact</a>
             </li>
           </ul>
         </div>
@@ -71,38 +71,39 @@
     <div class="post">
       <header class="post-header">
         <h1 class="post-title">
-          <span class="font-weight-bold">Engineering</span> Projects
+          <span class="font-weight-bold">Engineering</span> Portfolio
         </h1>
-        <p class="desc">A curated archive of cyber-physical digital twins, 44 FreeCAD parametric assemblies, OpenXR VR test stands, and marine robotics.</p>
+        <p class="desc">A lifetime of building: from childhood games to autonomous robotics, 44 FreeCAD parametric mechanisms, and cyber-physical digital twins.</p>
       </header>
 
-      <!-- Category Filter Tabs with Pinned option -->
+      <!-- Category Filter Tabs with Interactive Pinned Option -->
       <div class="filter-tabs">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="filter-pinned"><i class="fa-solid fa-star text-warning mr-1"></i> Pinned / Featured</button>
-        <button class="filter-btn" data-filter="filter-robotics">Robotics &amp; Digital Twins</button>
-        <button class="filter-btn" data-filter="filter-simulation">VR Simulation</button>
+        <button class="filter-btn" data-filter="filter-pinned"><i class="fa-solid fa-star text-warning mr-1"></i> Pinned / Favorites</button>
+        <button class="filter-btn" data-filter="filter-bridge">Cyber-Physical Bridge</button>
         <button class="filter-btn" data-filter="filter-cad">CAD &amp; Mechanisms</button>
-        <button class="filter-btn" data-filter="filter-systems">Systems &amp; Engines</button>
+        <button class="filter-btn" data-filter="filter-xr">XR &amp; Simulation</button>
+        <button class="filter-btn" data-filter="filter-robotics">Robotics Era</button>
+        <button class="filter-btn" data-filter="filter-games">Early Games Era</button>
       </div>
 
       <!-- Projects Grid -->
       <div class="row">
 
         <!-- 1. Digitwin1 -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-simulation" id="digitwin1">
+        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="digitwin1">
           <div class="project-card">
             <div class="img-wrapper">
-              <img src="/assets/img/digitwin_banner.png" alt="Digitwin1 Cyber-Physical Actuator">
+              <img src="/assets/img/digitwin_actuator.jpg" alt="Digitwin1 Cyber-Physical Actuator">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">Digitwin1</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('digitwin1')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('digitwin1')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Hardware-in-the-Loop 1-DOF Robotic Actuator Digital Twin</div>
+              <div class="card-subtitle">Cyber-Physical 1-DOF Robotic Actuator Digital Twin &bull; The Bridge Era</div>
               <p class="card-text">
-                An end-to-end cyber-physical digital twin connecting a 1-DOF robotic actuator with an OpenXR spatial simulation in Godot 4. Features a standalone Python daemon running on a Raspberry Pi Zero, streaming encoder angles, commanded setpoints, and torque feedback over low-latency UDP sockets. Includes dynamic joint limits, real-time telemetry gauges, and automated safety interlocks.
+                An end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot 4. Features a standalone Python daemon running on a Raspberry Pi Zero, streaming encoder angles, commanded setpoints, and torque feedback over low-latency UDP sockets. Includes dynamic joint limits, real-time telemetry gauges, and automated safety interlocks.
               </p>
               <div>
                 <span class="badge-tag">Godot 4</span>
@@ -114,14 +115,13 @@
               </div>
               <div class="project-actions">
                 <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
-                <a href="/publications/#digitwin1" class="btn-folio"><i class="fa-solid fa-file-lines"></i> Proposal &amp; Specs</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- 2. FreeCAD Suite -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="freecad-suite">
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="freecad-suite">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/cycloidal_drive.png" alt="Parametric CAD Suite">
@@ -129,9 +129,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">FreeCAD Engineering Suite</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('freecad-suite')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('freecad-suite')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">44 Fully Parametric Mechanical Assemblies</div>
+              <div class="card-subtitle">44 Fully Parametric Mechanical Assemblies &bull; Precision CAD</div>
               <p class="card-text">
                 A massive, mathematically rigorous CAD repository comprising 44 complex mechanical assemblies. Highlights include zero-backlash cycloidal drives, harmonic reducers, compound planetary gearboxes, a 6-DOF robotic manipulator, Stewart hexapod platform, Delta robot, mechanical Tourbillon, and dual-spool jet engine cutaways with full parametric spreadsheets.
               </p>
@@ -150,7 +150,7 @@
         </div>
 
         <!-- 3. VRMechanics -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-simulation filter-cad" id="vrmechanics">
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="vrmechanics">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/vrmechanics.png" alt="VRMechanics Teardown Lab">
@@ -158,9 +158,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">VRMechanics</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('vrmechanics')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('vrmechanics')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Immersive Mechanical Teardown &amp; Inspection Trainer</div>
+              <div class="card-subtitle">Immersive Mechanical Teardown &amp; Inspection Trainer &bull; XR Era</div>
               <p class="card-text">
                 Interactive spatial VR laboratory built in Godot 4 with OpenXR support. Students and engineers physically disassemble and inspect 5 complex assemblies: a precision Cycloidal Gearbox, an Electric Motor, a 6-DOF Industrial Robot Arm, a VR Headset, and a Modern Smartphone. Features exploded views, real-time spatial physics, and step-by-step assembly sequences.
               </p>
@@ -179,7 +179,7 @@
         </div>
 
         <!-- 4. BrushlessLab -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-robotics filter-simulation" id="brushlesslab">
+        <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="brushlesslab">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/brushless_bench.png" alt="BrushlessLab Test Stand">
@@ -187,9 +187,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">BrushlessLab</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('brushlesslab')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('brushlesslab')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">3-Phase BLDC Motor Diagnostics &amp; Characterization Bench</div>
+              <div class="card-subtitle">3-Phase BLDC Motor Diagnostics &amp; Characterization Bench &bull; XR Era</div>
               <p class="card-text">
                 Virtual diagnostic and characterization bench for brushless direct-current (BLDC) actuators. Features 6 distinct diagnostic stations: milliohm winding resistance validation, back-EMF waveform scope visualization, Hall sensor timing calibration, dynamic dynamometer loading, and bearing envelope wear analysis.
               </p>
@@ -216,9 +216,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">Pioneer ROV</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Underwater Exploration Robot &bull; AUI Robotics Club</div>
+              <div class="card-subtitle">Underwater Exploration Robot &bull; AUI Robotics Club &bull; Robotics Era</div>
               <p class="card-text">
                 Autonomous and tethered underwater robotics vehicle engineered for the regional marine robotics competition. Led the electrical architecture, 6-thruster vector control allocation, high-voltage battery regulation, and tethered RS-485/Ethernet sensor telemetry for extreme aquatic environments.
               </p>
@@ -229,14 +229,14 @@
                 <span class="badge-tag">Embedded C++</span>
               </div>
               <div class="project-actions">
-                <a href="/publications/#pioneer-rov" class="btn-folio"><i class="fa-solid fa-file-pdf"></i> Technical Proposal</a>
+                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club</span>
               </div>
             </div>
           </div>
         </div>
 
         <!-- 6. Harmonic & Cycloidal Drives -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-robotics" id="harmonic-drive">
+        <div class="col-lg-6 mb-4 project-grid-item filter-cad filter-bridge" id="harmonic-drive">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/harmonic_drive.png" alt="Harmonic Drive CAD">
@@ -244,9 +244,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">Harmonic &amp; Cycloidal Reducers</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('harmonic-drive')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('harmonic-drive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Zero-Backlash High-Ratio Robotic Transmissions</div>
+              <div class="card-subtitle">Zero-Backlash High-Ratio Robotic Transmissions &bull; Precision CAD</div>
               <p class="card-text">
                 Parametric design of strain-wave (harmonic) gearing with elliptical wave generator and flexible spline teeth, alongside custom cycloidal drive disks generated via epicycloid tooth formulas. Engineered for compact, high-torque robotic joints with zero backlash.
               </p>
@@ -272,9 +272,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">Stewart Platform &amp; Delta Parallel Robots</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('stewart-platform')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('stewart-platform')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Multi-DOF High-Speed Kinematic Simulators</div>
+              <div class="card-subtitle">Multi-DOF High-Speed Kinematic Simulators &bull; Robotics &amp; CAD</div>
               <p class="card-text">
                 Parametric mathematical models of a 6-DOF Stewart hexapod platform and a 3-DOF high-speed Delta pick-and-place robot. Developed forward and inverse kinematic equations for linear actuator strokes, universal joints, and base mounting geometries.
               </p>
@@ -291,7 +291,64 @@
           </div>
         </div>
 
-        <!-- 8. Tourbillon & Jet Engine -->
+        <!-- 8. VRFields -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-xr" id="vrfields">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/coassembly_vr.png" alt="VRFields Simulation">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">VRFields: Maxwell Vector Field Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('vrfields')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">GPU-Accelerated Electromagnetic Spatial Engine &bull; XR Era</div>
+              <p class="card-text">
+                GPU shader-accelerated vector field engine rendering 3D magnetic flux lines, Coulomb electrostatic potentials, and dynamic particle advection under Lorentz forces in OpenXR virtual reality.
+              </p>
+              <div>
+                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">OpenXR</span>
+                <span class="badge-tag">GPU Shaders</span>
+                <span class="badge-tag">Electromagnetism</span>
+                <span class="badge-tag">Physics</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/vrfields" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Line Follower & Obstacle Bot -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics" id="line-follower">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/robot_arm_6dof.png" alt="Autonomous Robotics Bot">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Autonomous Line Follower &amp; Obstacle Bot</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('line-follower')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Autonomous Mobile Robots &bull; Robotics Era (~Age 12+)</div>
+              <p class="card-text">
+                Early autonomous robotics platforms built around Arduino microcontrollers, IR sensor arrays for high-speed line tracking, ultrasonic distance rangefinders for obstacle collision avoidance, and custom H-bridge dual motor drivers.
+              </p>
+              <div>
+                <span class="badge-tag">Arduino</span>
+                <span class="badge-tag">Ultrasonic</span>
+                <span class="badge-tag">IR Sensor Array</span>
+                <span class="badge-tag">Robotics Era</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn-folio text-muted"><i class="fa-solid fa-robot"></i> Embedded Hardware</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Tourbillon & Jet Engine -->
         <div class="col-lg-6 mb-4 project-grid-item filter-cad" id="tourbillon">
           <div class="project-card">
             <div class="img-wrapper">
@@ -300,9 +357,9 @@
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
                 <h3 class="card-title">Tourbillon Escapement &amp; Jet Engine</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('tourbillon')"><i class="fa-regular fa-star"></i> Pin</button>
+                <button class="btn-folio btn-pin" onclick="togglePin('tourbillon')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Precision Horology &amp; Aerospace Mechanical Assemblies</div>
+              <div class="card-subtitle">Precision Horology &amp; Aerospace Mechanical Assemblies &bull; CAD</div>
               <p class="card-text">
                 Complex mechanical horological mechanism rotating the balance wheel and escapement within a cage to cancel out gravitational errors, paired with a multi-stage dual-spool axial compressor Jet Engine cutaway with aerodynamic swept blades and stator vanes.
               </p>
@@ -319,46 +376,18 @@
           </div>
         </div>
 
-        <!-- 9. CoAssembly -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-simulation" id="coassembly">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/coassembly_vr.png" alt="CoAssembly Multi-user VR">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">CoAssembly</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('coassembly')"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Multi-User Networked Collaborative Engineering VR Lab</div>
-              <p class="card-text">
-                Networked multi-user collaborative VR environment built with Godot 4. Enables geographically distributed engineering teams to simultaneously inspect, manipulate, and assemble complex mechatronic prototypes with spatial audio and state replication.
-              </p>
-              <div>
-                <span class="badge-tag">Networked VR</span>
-                <span class="badge-tag">Godot 4</span>
-                <span class="badge-tag">Collaboration</span>
-                <span class="badge-tag">State Replication</span>
-              </div>
-              <div class="project-actions">
-                <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Project Repo</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 10. Racer3D -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-systems" id="racer3d">
+        <!-- 11. Racer3D -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-games" id="racer3d">
           <div class="project-card">
             <div class="img-wrapper">
               <img src="/assets/img/racer3d.png" alt="Racer3D Vehicle Simulation">
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Racer3D &amp; Real-Time Simulation</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('racer3d')"><i class="fa-regular fa-star"></i> Pin</button>
+                <h3 class="card-title">Racer3D: Vehicle Dynamics Engine</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('racer3d')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">Raycast Suspension &amp; Vehicle Dynamics Engine</div>
+              <div class="card-subtitle">Raycast Suspension &amp; Vehicle Dynamics Engine &bull; Games Era</div>
               <p class="card-text">
                 Real-time 3D vehicle physics engine incorporating raycast spring-damper suspension, slip angle friction modeling, and procedural track generation. Part of a 16-game algorithmic and systems simulation suite.
               </p>
@@ -366,10 +395,39 @@
                 <span class="badge-tag">Physics Engine</span>
                 <span class="badge-tag">Raycast Suspension</span>
                 <span class="badge-tag">Vehicle Dynamics</span>
-                <span class="badge-tag">Systems</span>
+                <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
                 <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Game Dev Archive (16 Games) -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-games" id="games-archive">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/tower_defense.png" alt="16 Games Archive">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Game Dev Archive (16 Games)</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('games-archive')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">16 Algorithmic &amp; Systems Games &bull; Early Games Era (~Age 4–10+)</div>
+              <p class="card-text">
+                A massive retrospective archive of 16 complete games built from scratch: Tower Defense (A* pathfinding, wave state machines), Asteroid Storm, 2D Platformer, Dungeon Crawler, Space Invaders, Tetris, Breakout, Snake, and Minesweeper.
+              </p>
+              <div>
+                <span class="badge-tag">Game Architecture</span>
+                <span class="badge-tag">A* Pathfinding</span>
+                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Python</span>
+                <span class="badge-tag">16 Games</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/addy79/games" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View All 16 Games</a>
               </div>
             </div>
           </div>
@@ -383,7 +441,7 @@
   <footer>
     <div class="container text-center">
       <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
-      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics | Al Akhawayn University in Ifrane</p>
+      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics &amp; Cyber-Physical Systems | Al Akhawayn University in Ifrane</p>
     </div>
   </footer>
 
@@ -392,7 +450,7 @@
     <div class="search-modal">
       <div class="search-input-wrapper">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="search-query-input" class="search-input" placeholder="Search projects, skills, proposals, CV..." autocomplete="off">
+        <input type="text" id="search-query-input" class="search-input" placeholder="Search projects, tools, timeline, CV..." autocomplete="off">
         <button class="toggle-btn" onclick="closeSearchModal()" style="border:none; padding:0 5px;" title="Close"><i class="fa-solid fa-xmark"></i></button>
       </div>
       <div id="search-results-container" class="search-results"></div>

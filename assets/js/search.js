@@ -5,81 +5,75 @@
 const SEARCH_INDEX = [
   {
     title: "Digitwin1: Hardware-in-the-Loop Cyber-Physical Digital Twin",
-    category: "Projects / Robotics",
+    category: "Projects / Cyber-Physical Bridge",
     url: "/projects/#digitwin1",
     keywords: "godot openxr raspberry pi zero udp actuator digital twin hil robotics controls hardware python"
   },
   {
     title: "VRMechanics: Virtual Mechanical Teardown & Inspection",
-    category: "Projects / VR Simulation",
+    category: "Projects / XR Simulation",
     url: "/projects/#vrmechanics",
     keywords: "vrmechanics godot openxr vr education assembly disassembly cycloidal gearbox robot arm bldc motor"
   },
   {
-    title: "VRFields: Real-Time Electromagnetic Vector Field Visualizer",
-    category: "Projects / VR Simulation",
-    url: "/projects/#vrfields",
-    keywords: "vrfields godot openxr maxwell electromagnetic physics shaders vector fields simulation flux"
+    title: "FreeCAD Mechanism Suite (44 Parametric Assemblies)",
+    category: "Projects / CAD & Hardware",
+    url: "/projects/#freecad-suite",
+    keywords: "freecad cad cycloidal drive harmonic drive planetary gearbox stewart platform delta robot tourbillon jet engine wankel"
   },
   {
-    title: "BrushlessLab: BLDC Motor Diagnostics & Bench Testing",
+    title: "BrushlessLab: 3-Phase BLDC Motor Diagnostic Bench",
     category: "Projects / Mechatronics",
     url: "/projects/#brushlesslab",
     keywords: "brushlesslab bldc motor testing back-emf hall sensor dyno torque winding diagnostic"
   },
   {
-    title: "Parametric CAD Suite (44 Complex Mechanical Assemblies)",
-    category: "Projects / CAD & Mechanical",
-    url: "/projects/#freecad-suite",
-    keywords: "freecad cad cycloidal drive harmonic drive planetary gearbox stewart platform delta robot tourbillon jet engine wankel"
-  },
-  {
-    title: "Pioneer ROV: Autonomous Underwater Vehicle",
-    category: "Projects / Robotics",
+    title: "Pioneer ROV: Autonomous Underwater Exploration Vehicle",
+    category: "Projects / Robotics Era",
     url: "/projects/#pioneer-rov",
     keywords: "rov underwater robotics aui robotics club pioneer telemetry thruster control marine"
   },
   {
-    title: "CoAssembly: Multi-User Networked Engineering VR Lab",
-    category: "Projects / VR Simulation",
-    url: "/projects/#coassembly",
-    keywords: "coassembly godot vr networking multi-user collaborative spatial audio engineering"
+    title: "VRFields: Real-Time Maxwell Vector Field Simulation",
+    category: "Projects / XR Simulation",
+    url: "/projects/#vrfields",
+    keywords: "vrfields godot openxr maxwell electromagnetic physics shaders vector fields simulation flux"
   },
   {
-    title: "Racer3D: Real-Time Physics & Vehicle Dynamics Engine",
+    title: "Racer3D: Vehicle Dynamics & Raycast Suspension Engine",
     category: "Projects / Systems & Games",
     url: "/projects/#racer3d",
     keywords: "racer3d vehicle dynamics simulation physics raycast suspension godot python"
   },
   {
-    title: "The Body: Mechatronics & Hardware Skills",
-    category: "Technical Skills",
-    url: "/#technical-skills",
-    keywords: "freecad solidworks cswp cycloidal gearboxes stm32 raspberry pi bldc 3d printing pcb design hardware"
+    title: "Game Dev Archive: 16 Algorithmic & Systems Games",
+    category: "Projects / Early Games Era",
+    url: "/projects/#games-archive",
+    keywords: "games platformer breakout space invaders tetris tower defense dungeon crawler godot python"
   },
   {
-    title: "The Brains: Autonomy, Controls & Simulation Skills",
-    category: "Technical Skills",
-    url: "/#technical-skills",
-    keywords: "godot 4 openxr inverse kinematics pid controls trajectory planning physics simulation c# python udp"
+    title: "Autonomous Line Follower & Obstacle Bot",
+    category: "Projects / Robotics Era",
+    url: "/projects/#line-follower",
+    keywords: "robot arduino ultrasonic sensors line follower competition chassis motor driver"
   },
   {
-    title: "Digitwin1 Academic Proposal & Architecture Report",
-    category: "Publications & Proposals",
-    url: "/publications/#digitwin1",
-    keywords: "digitwin1 proposal cyber-physical paper rachid lghoul aui report actuator"
+    title: "Tools of the Trade (Hardware & Software)",
+    category: "Skills",
+    url: "/#tools-of-the-trade",
+    keywords: "freecad solidworks kicad arduino raspberry pi stm32 c++ python godot openxr linux"
   },
   {
-    title: "AUI Robotics Club Pioneer ROV Technical Report",
-    category: "Publications & Proposals",
-    url: "/publications/#pioneer-rov",
-    keywords: "rov proposal marine robotics aui egypt regional strategy technical report"
+    title: "The Obsession Timeline (Age 4 to 23)",
+    category: "About / Journey",
+    url: "/#timeline",
+    keywords: "eras childhood games robots xr cyber-physical digital twin aui alx"
   },
   {
     title: "Curriculum Vitae / Resume",
     category: "CV",
     url: "/cv/",
-    keywords: "education al akhawayn university aui bsge general engineering alx software engineering skills experience"
+    keywords: "education al akhawayn university aui bsge general engineering mechatronics alx resume pdf"
   }
 ];
 
@@ -109,7 +103,7 @@ function renderSearchResults(query) {
   let matches = [];
 
   if (!query) {
-    matches = SEARCH_INDEX.slice(0, 5); // default suggestions
+    matches = SEARCH_INDEX.slice(0, 5);
   } else {
     matches = SEARCH_INDEX.filter(item => {
       return item.title.toLowerCase().includes(query) ||
@@ -149,9 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Keyboard navigation
   window.addEventListener("keydown", function (e) {
-    // Open on Ctrl+K or Cmd+K
     if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
       e.preventDefault();
       const modal = document.getElementById("search-modal-backdrop");
@@ -161,14 +153,11 @@ document.addEventListener("DOMContentLoaded", function () {
         openSearchModal();
       }
     }
-
-    // Close on Escape
     if (e.key === "Escape") {
       closeSearchModal();
     }
   });
 
-  // Close modal when clicking on backdrop outside the box
   const backdrop = document.getElementById("search-modal-backdrop");
   if (backdrop) {
     backdrop.addEventListener("click", function (e) {
