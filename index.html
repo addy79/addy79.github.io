@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Asmae El Harti | Robotics &amp; Cyber-Physical Systems Engineer</title>
+  <meta name="author" content="Asmae El Harti">
+  <meta name="description" content="Academic & Engineering Portfolio of Asmae El Harti. Robotics, Cyber-Physical Digital Twins, Mechatronics, CAD & VR Simulation.">
+  <meta name="keywords" content="Asmae El Harti, addy79, robotics engineer, digital twins, godot 4, openxr, mechatronics, freecad, raspberry pi, al akhawayn university">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Asmae El Harti">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Asmae El Harti | Robotics &amp; Cyber-Physical Systems Engineer">
+  <meta property="og:description" content="Portfolio of Asmae El Harti - Robotics, Cyber-Physical Digital Twins, Mechatronics, and Virtual Reality Engineering.">
+  <meta property="og:image" content="/assets/img/profile.jpg">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Slab:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!-- Immediate Theme Loader -->
+  <script src="/assets/js/theme.js"></script>
+</head>
+
+<body>
+  <!-- Scroll Progress -->
+  <progress id="progress" value="0" max="100"></progress>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span class="initials-badge">AEH</span> Asmae El Harti
+        </a>
+
+        <div class="d-flex align-items-center ml-auto order-md-2">
+          <button class="search-btn" onclick="openSearchModal()" title="Search portfolio">
+            <i class="fa-solid fa-magnifying-glass"></i> <kbd>ctrl k</kbd>
+          </button>
+          <button class="toggle-btn" onclick="toggleTheme()" title="Switch Light/Dark/System theme">
+            <i id="theme-toggle-icon" class="fa-solid fa-sun"></i>
+          </button>
+          <button class="navbar-toggler ml-2" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: var(--global-text-color);"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-md-1" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">about <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/publications/">publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/">cv</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mt-4" role="main">
+    <div class="post">
+      <header class="post-header">
+        <h1 class="post-title">
+          <span class="font-weight-bold">Asmae</span> El Harti
+        </h1>
+        <p class="desc">Robotics &amp; Cyber-Physical Systems Engineer | Al Akhawayn University &amp; ALX</p>
+      </header>
+
+      <article>
+        <!-- Floating Profile Card -->
+        <div class="profile">
+          <div class="profile-card">
+            <img src="/assets/img/profile.jpg" alt="Asmae El Harti" class="profile-img">
+            <h5 class="mb-1 font-weight-bold">Asmae El Harti</h5>
+            <div class="more-info">
+              <p><i class="fa-solid fa-building-columns mr-1"></i> Al Akhawayn University (AUI)</p>
+              <p><i class="fa-solid fa-graduation-cap mr-1"></i> BSGE &bull; Software Engineering ALX</p>
+              <p><i class="fa-solid fa-location-dot mr-1"></i> Ifrane / Morocco</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://github.com/addy79" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="https://x.com/AsmaeelHarti" target="_blank" rel="noopener noreferrer" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/asmae-el-harti-9b76b2268/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="mailto:addy79@users.noreply.github.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="/cv/" title="Curriculum Vitae"><i class="ai ai-cv"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio / Engineering Statement -->
+        <div class="clearfix">
+          <p>
+            I architect <strong>cyber-physical systems</strong>, <strong>digital twins</strong>, and <strong>autonomous robotics hardware</strong> designed to bridge the chasm between mathematical simulation and rugged physical reality. Working across the full mechatronic stack—from parametric mechanism design (custom cycloidal reducers, harmonic drives, parallel manipulators) to real-time embedded firmware (Raspberry Pi Zero, bare-metal C++, UDP telemetry) and high-fidelity virtual simulation in Godot 4 &amp; OpenXR.
+          </p>
+          <p>
+            My engineering philosophy centers on <em>first-principles derivation</em>: designing transmissions from involute and cycloidal kinematics, establishing low-latency hardware-in-the-loop (HIL) telemetry links, and validating dynamic multi-body physics before committing to physical fabrication. Whether optimizing actuator control loops or authoring interactive VR engineering teardowns, I build robust, zero-to-one cyber-physical systems.
+          </p>
+        </div>
+
+        <!-- Technical Skills Section -->
+        <h2 class="section-title" id="technical-skills">
+          <span><i class="fa-solid fa-gears mr-2"></i> Technical Skills</span>
+        </h2>
+        <p class="text-muted">
+          Full-stack mechatronic competencies spanning kinematic formulation, physical fabrication, real-time embedded networking, and immersive spatial simulation.
+        </p>
+
+        <div class="skills-container">
+          <!-- The Body -->
+          <div class="skill-pillar">
+            <h4><i class="fa-solid fa-robot"></i> The Body: Mechatronics &amp; Hardware</h4>
+            
+            <div class="skill-item">
+              <strong>Precision Mechanical Design &amp; CAD</strong>
+              <p>Author of 44 complex parametric mechanisms in FreeCAD: custom cycloidal gearboxes, zero-backlash harmonic drives, planetary gearboxes, Stewart platforms, 6-DOF robotic arms, and Delta robots.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Embedded Systems &amp; Hardware-in-the-Loop</strong>
+              <p>Firmware in C/C++ and Python for Raspberry Pi Zero, STM32, and Arduino. Low-latency communication protocols (UDP, UART, SPI, I2C) for sub-millisecond telemetry and closed-loop control.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Actuators, Power &amp; Diagnostics</strong>
+              <p>3-phase BLDC outrunners, servomotors, H-bridges, dynamometer test stand integration, winding milliohm verification, and Hall sensor calibration.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Rapid Prototyping &amp; Marine Robotics</strong>
+              <p>FDM 3D printing tolerances, press-fit assemblies, mechanical bearing integration, and underwater ROV chassis engineering with AUI Robotics Club.</p>
+            </div>
+          </div>
+
+          <!-- The Brains -->
+          <div class="skill-pillar">
+            <h4><i class="fa-solid fa-microchip"></i> The Brains: Autonomy &amp; Simulation</h4>
+            
+            <div class="skill-item">
+              <strong>Cyber-Physical Digital Twins</strong>
+              <p>Hardware-in-the-loop synchronization in Godot 4, real-time state estimation, telemetry bridging between physical actuators and OpenXR virtual environments.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Kinematics &amp; Control Theory</strong>
+              <p>Forward and Inverse Kinematics (IK) for serial and parallel manipulators, PID loop tuning, trajectory planning, and state-space regulation.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Spatial VR &amp; GPU Physics</strong>
+              <p>OpenXR immersive training systems (VRMechanics, CoAssembly), GPU-accelerated electromagnetic field visualization (VRFields) with custom shaders and particle advection.</p>
+            </div>
+
+            <div class="skill-item">
+              <strong>Software Engineering &amp; Systems</strong>
+              <p>C#, GDScript, Python, C++, Linux (Arch/Ubuntu), Git version control, concurrent networking, socket programming, and modular system architecture.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest News / Milestones -->
+        <h2 class="section-title">
+          <span><i class="fa-solid fa-newspaper mr-2"></i> Milestones &amp; News</span>
+        </h2>
+        <table class="news-table">
+          <tbody>
+            <tr>
+              <td class="news-date">Oct 2024</td>
+              <td>
+                Architected and deployed <strong>Digitwin1</strong>: an OpenXR cyber-physical digital twin connecting a 1-DOF robotic actuator with a Raspberry Pi Zero telemetry daemon over low-latency UDP.
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">Sep 2024</td>
+              <td>
+                Published the <strong>FreeCAD Engineering Mechanism Suite</strong> comprising 44 fully parametric mechanical designs including cycloidal drives, harmonic drives, tourbillons, and multi-DOF robotics.
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">May 2024</td>
+              <td>
+                Led electronics and telemetry engineering for the <strong>Pioneer ROV</strong> underwater exploration vehicle with the Al Akhawayn University Robotics Club.
+              </td>
+            </tr>
+            <tr>
+              <td class="news-date">Mar 2024</td>
+              <td>
+                Developed <strong>VRMechanics</strong> and <strong>BrushlessLab</strong>: immersive engineering laboratories for mechanical disassembly and 3-phase BLDC diagnostic characterization in Godot 4.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Featured Projects -->
+        <h2 class="section-title">
+          <span><i class="fa-solid fa-diagram-project mr-2"></i> Featured Projects</span>
+          <a href="/projects/" class="view-all">All projects <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        </h2>
+
+        <div class="row">
+          <!-- Project 1: Digitwin1 -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/digitwin_banner.png" alt="Digitwin1 Digital Twin">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Digitwin1</h3>
+                <div class="card-subtitle">Cyber-Physical Actuator Digital Twin</div>
+                <p class="card-text">
+                  Hardware-in-the-loop (HIL) 1-DOF robotic actuator digital twin in Godot 4 + OpenXR. Bridges physical Raspberry Pi Zero telemetry with virtual spatial simulation over UDP.
+                </p>
+                <div>
+                  <span class="badge-tag">Godot 4</span>
+                  <span class="badge-tag">OpenXR</span>
+                  <span class="badge-tag">Raspberry Pi</span>
+                  <span class="badge-tag">UDP</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#digitwin1" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
+                  <a href="https://github.com/addy79/digitwin1" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: FreeCAD Suite -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/cycloidal_drive.png" alt="Parametric CAD Suite">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">FreeCAD CAD Suite</h3>
+                <div class="card-subtitle">44 Parametric Mechanical Assemblies</div>
+                <p class="card-text">
+                  Comprehensive mechanical design portfolio featuring cycloidal reducers, harmonic drives, Stewart platforms, 6-DOF robotic arms, and jet engine cutaways.
+                </p>
+                <div>
+                  <span class="badge-tag">FreeCAD</span>
+                  <span class="badge-tag">Kinematics</span>
+                  <span class="badge-tag">Robotics</span>
+                  <span class="badge-tag">3D Printing</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#freecad-suite" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
+                  <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: VRMechanics & BrushlessLab -->
+          <div class="col-md-4 mb-4">
+            <div class="project-card">
+              <div class="img-wrapper">
+                <img src="/assets/img/brushless_lab.png" alt="BrushlessLab and VRMechanics">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">BrushlessLab &amp; VR</h3>
+                <div class="card-subtitle">OpenXR Engineering Laboratory Suite</div>
+                <p class="card-text">
+                  Immersive spatial labs for 3-phase BLDC motor diagnostic teardowns, dynamometer testing, back-EMF analysis, and multi-body kinematic inspection.
+                </p>
+                <div>
+                  <span class="badge-tag">Godot 4</span>
+                  <span class="badge-tag">BLDC</span>
+                  <span class="badge-tag">OpenXR</span>
+                  <span class="badge-tag">Diagnostics</span>
+                </div>
+                <div class="project-actions">
+                  <a href="/projects/#brushlesslab" class="btn-folio"><i class="fa-solid fa-circle-info"></i> Details</a>
+                  <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Code</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Selected Publications / Proposals -->
+        <h2 class="section-title">
+          <span><i class="fa-solid fa-book-bookmark mr-2"></i> Featured Proposals &amp; Reports</span>
+          <a href="/publications/" class="view-all">All publications <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        </h2>
+
+        <div class="publication-item">
+          <div class="publication-title">
+            Digitwin1: Hardware-in-the-Loop Cyber-Physical Digital Twin for High-Precision Robotic Actuation
+          </div>
+          <div class="publication-authors">
+            <span class="me">Asmae El Harti</span>, Supervised by Prof. Rachid Lghoul
+          </div>
+          <div class="publication-venue">
+            Al Akhawayn University in Ifrane &bull; School of Science &amp; Engineering Technical Proposal (2024)
+          </div>
+          <div>
+            <a href="/publications/#digitwin1" class="btn-folio"><i class="fa-solid fa-file-lines"></i> View Proposal</a>
+            <button class="btn-folio" onclick="toggleAbstract('abs-digitwin-home')"><i class="fa-solid fa-align-left"></i> Abstract</button>
+            <button class="btn-folio" onclick="copyBibtex('bib-digitwin-home')"><i class="fa-solid fa-quote-left"></i> BibTeX</button>
+          </div>
+          <div id="abs-digitwin-home" class="publication-abstract">
+            This work presents an integrated cyber-physical digital twin architecture for precision 1-DOF robotic actuators. By coupling an OpenXR spatial simulation in Godot 4 with a physical Raspberry Pi Zero micro-controller daemon over bidirectional asynchronous UDP sockets, the system achieves sub-millisecond synchronization, real-time safety interlocks, and dynamic state visualization.
+          </div>
+          <pre id="bib-digitwin-home" style="display:none;">@article{elharti2024digitwin1,
+  title={Digitwin1: Hardware-in-the-Loop Cyber-Physical Digital Twin for High-Precision Robotic Actuation},
+  author={El Harti, Asmae},
+  school={Al Akhawayn University},
+  year={2024}
+}</pre>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+      <p class="small text-muted mb-0">Built with first-principles mechatronics, Godot 4, FreeCAD, and al-folio styling.</p>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal-backdrop" class="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-query-input" class="search-input" placeholder="Search projects, skills, proposals, CV..." autocomplete="off">
+        <button class="toggle-btn" onclick="closeSearchModal()" style="border:none; padding:0 5px;" title="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="search-results-container" class="search-results"></div>
+      <div class="search-footer">
+        <span><kbd>Esc</kbd> to close</span>
+        <span>Navigation: Click or Enter</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

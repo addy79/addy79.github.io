@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Curriculum Vitae | Asmae El Harti</title>
+  <meta name="author" content="Asmae El Harti">
+  <meta name="description" content="Curriculum Vitae of Asmae El Harti - Robotics & Cyber-Physical Systems Engineer.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Slab:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/theme.js"></script>
+</head>
+
+<body>
+  <progress id="progress" value="0" max="100"></progress>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span class="initials-badge">AEH</span> Asmae El Harti
+        </a>
+
+        <div class="d-flex align-items-center ml-auto order-md-2">
+          <button class="search-btn" onclick="openSearchModal()" title="Search portfolio">
+            <i class="fa-solid fa-magnifying-glass"></i> <kbd>ctrl k</kbd>
+          </button>
+          <button class="toggle-btn" onclick="toggleTheme()" title="Switch Light/Dark/System theme">
+            <i id="theme-toggle-icon" class="fa-solid fa-sun"></i>
+          </button>
+          <button class="navbar-toggler ml-2" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: var(--global-text-color);"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-md-1" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/publications/">publications</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/cv/">cv <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mt-4" role="main">
+    <div class="post">
+      <header class="post-header d-flex justify-content-between align-items-center flex-wrap">
+        <div>
+          <h1 class="post-title">
+            <span class="font-weight-bold">Curriculum</span> Vitae
+          </h1>
+          <p class="desc">Asmae El Harti &bull; Robotics &amp; Cyber-Physical Systems</p>
+        </div>
+        <button class="btn-folio btn-folio-primary mt-2 mt-md-0" onclick="window.print()" title="Print CV to PDF">
+          <i class="fa-solid fa-print"></i> Print / Save PDF
+        </button>
+      </header>
+
+      <article>
+        <!-- Contact / Quick Info -->
+        <div class="cv-section">
+          <div class="row text-center text-md-left mb-4" style="font-size: 0.95rem; color: var(--global-text-color-light);">
+            <div class="col-md-4 mb-2">
+              <i class="fa-solid fa-location-dot mr-1 text-primary"></i> Ifrane, Morocco
+            </div>
+            <div class="col-md-4 mb-2">
+              <i class="fa-brands fa-github mr-1 text-primary"></i> <a href="https://github.com/addy79" target="_blank" rel="noopener noreferrer">github.com/addy79</a>
+            </div>
+            <div class="col-md-4 mb-2">
+              <i class="fa-brands fa-x-twitter mr-1 text-primary"></i> <a href="https://x.com/AsmaeelHarti" target="_blank" rel="noopener noreferrer">@AsmaeelHarti</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fa-solid fa-graduation-cap mr-2"></i> Education</h3>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">Al Akhawayn University in Ifrane (AUI)</span>
+              <span class="cv-entry-date">2021 &ndash; Present</span>
+            </div>
+            <div class="cv-entry-subtitle">Bachelor of Science in General Engineering (BSGE) &bull; Mechatronics &amp; Robotics</div>
+            <ul>
+              <li>Focus on robotics, dynamic systems modeling, control systems, mechanics of materials, and embedded hardware.</li>
+              <li>Active researcher on cyber-physical digital twins under the supervision of Prof. Rachid Lghoul.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">ALX Africa</span>
+              <span class="cv-entry-date">2023 &ndash; Present</span>
+            </div>
+            <div class="cv-entry-subtitle">Software Engineering Specialization</div>
+            <ul>
+              <li>Intensive software engineering curriculum covering systems programming in C, low-level memory management, Linux OS architecture, socket networking, and backend API design.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Technical Competencies -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fa-solid fa-screwdriver-wrench mr-2"></i> Technical Competencies</h3>
+          
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <strong>Mechanical Design &amp; CAD:</strong>
+              <p class="text-muted small mb-0">FreeCAD (44 complex parametric assemblies), SolidWorks, custom cycloidal drives, zero-backlash harmonic drives, planetary gearboxes, Stewart platforms, 3D printing (FDM/Resin), tolerance analysis.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <strong>Embedded &amp; Electronics:</strong>
+              <p class="text-muted small mb-0">Raspberry Pi Zero, Arduino, STM32, C/C++, Python, low-latency UDP, UART, SPI, I2C, hardware-in-the-loop (HIL) telemetry, power distribution boards.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <strong>Spatial Simulation &amp; Digital Twins:</strong>
+              <p class="text-muted small mb-0">Godot 4, OpenXR, real-time spatial networking, rigid body physics, GPU shaders (electromagnetic fields), multi-user state synchronization.</p>
+            </div>
+            <div class="col-md-6 mb-3">
+              <strong>Control Systems &amp; Robotics:</strong>
+              <p class="text-muted small mb-0">Forward &amp; Inverse Kinematics, PID control loops, BLDC 3-phase motor diagnostics, dynamometer bench testing, back-EMF waveform characterization.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Engineering Projects -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fa-solid fa-cubes-stacked mr-2"></i> Key Engineering Projects</h3>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">Digitwin1 &ndash; Cyber-Physical Actuator Digital Twin</span>
+              <span class="cv-entry-date">Godot 4 &bull; OpenXR &bull; Raspberry Pi</span>
+            </div>
+            <div class="cv-entry-subtitle">Lead Architect &amp; Developer</div>
+            <ul>
+              <li>Architected a sub-millisecond bidirectional UDP telemetry bridge connecting physical Raspberry Pi Zero hardware with an OpenXR VR digital twin in Godot 4.</li>
+              <li>Implemented real-time PID feedback, joint limit constraints, dynamic load simulation, and fail-safe hardware emergency stops.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">FreeCAD Parametric Mechanism Suite</span>
+              <span class="cv-entry-date">44 Assemblies &bull; Kinematics</span>
+            </div>
+            <div class="cv-entry-subtitle">Creator &amp; CAD Architect</div>
+            <ul>
+              <li>Engineered 44 complex mechanical mechanisms from first principles: zero-backlash cycloidal drives, harmonic strain-wave gearboxes, Stewart hexapod platforms, and dual-spool jet engine cutaways.</li>
+              <li>All assemblies feature parametric spreadsheets for instant scalability, tooth profile recalculation, and 3D printing optimization.</li>
+            </ul>
+          </div>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">VRMechanics &amp; BrushlessLab</span>
+              <span class="cv-entry-date">Godot 4 &bull; Spatial Computing</span>
+            </div>
+            <div class="cv-entry-subtitle">Creator &amp; Simulation Engineer</div>
+            <ul>
+              <li>Created virtual reality teardown and assembly trainers for multi-body mechanical systems and 3-phase BLDC actuators.</li>
+              <li>Engineered diagnostic benches for milliohm winding resistance, back-EMF oscilloscope verification, and Hall sensor timing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Leadership & Activities -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fa-solid fa-users mr-2"></i> Leadership &amp; Extracurriculars</h3>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">Al Akhawayn University Robotics Club</span>
+              <span class="cv-entry-date">2023 &ndash; Present</span>
+            </div>
+            <div class="cv-entry-subtitle">Electronics &amp; Telemetry Lead &bull; Pioneer ROV Marine Submersible</div>
+            <ul>
+              <li>Engineered the power distribution board, high-reliability RS-485/Ethernet tether communication, and 6-thruster vectoring matrix for the Pioneer underwater robotic vehicle.</li>
+              <li>Formulated the technical proposal and competition strategy for the regional marine robotics championship.</li>
+            </ul>
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+      <p class="small text-muted mb-0">Built with first-principles mechatronics, Godot 4, FreeCAD, and al-folio styling.</p>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal-backdrop" class="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-query-input" class="search-input" placeholder="Search projects, skills, proposals, CV..." autocomplete="off">
+        <button class="toggle-btn" onclick="closeSearchModal()" style="border:none; padding:0 5px;" title="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="search-results-container" class="search-results"></div>
+      <div class="search-footer">
+        <span><kbd>Esc</kbd> to close</span>
+        <span>Navigation: Click or Enter</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
