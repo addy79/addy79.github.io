@@ -7,7 +7,7 @@
 
   <title>Engineering Portfolio | Asmae El Harti</title>
   <meta name="author" content="Asmae El Harti">
-  <meta name="description" content="Engineering projects by Asmae El Harti: Cyber-Physical Digital Twins, Mechatronics, 44 FreeCAD Mechanisms, OpenXR VR, and Robotics.">
+  <meta name="description" content="Engineering projects by Asmae El Harti: Digital Twins, Mechatronics, 100s of CAD Mechanisms, OpenXR VR, and Robotics.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
@@ -73,7 +73,7 @@
         <h1 class="post-title">
           <span class="font-weight-bold">Engineering</span> Portfolio
         </h1>
-        <p class="desc">A lifetime of building: from childhood games to autonomous robotics, 44 FreeCAD parametric mechanisms, and cyber-physical digital twins.</p>
+        <p class="desc">A lifetime of building: from childhood games to autonomous robotics, 100s of CAD mechanisms, and cyber-physical digital twins.</p>
       </header>
 
       <!-- Category Filter Tabs with Interactive Pinned Option -->
@@ -103,12 +103,12 @@
               </div>
               <div class="card-subtitle">Cyber-Physical 1-DOF Robotic Actuator Digital Twin &bull; The Bridge Era</div>
               <p class="card-text">
-                An end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot 4. Features a standalone Python daemon running on a Raspberry Pi Zero, streaming encoder angles, commanded setpoints, and torque feedback over low-latency UDP sockets. Includes dynamic joint limits, real-time telemetry gauges, and automated safety interlocks.
+                An end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot. Features a standalone Python daemon running on embedded hardware, streaming encoder angles, commanded setpoints, and torque feedback over low-latency UDP sockets. Includes dynamic joint limits, real-time telemetry gauges, and automated safety interlocks.
               </p>
               <div>
-                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Godot</span>
                 <span class="badge-tag">OpenXR</span>
-                <span class="badge-tag">Raspberry Pi Zero</span>
+                <span class="badge-tag">Raspberry Pi</span>
                 <span class="badge-tag">UDP Bridge</span>
                 <span class="badge-tag">Python</span>
                 <span class="badge-tag">Controls</span>
@@ -128,12 +128,12 @@
             </div>
             <div class="card-body">
               <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">FreeCAD Engineering Suite</h3>
+                <h3 class="card-title">Parametric Mechanism Suite</h3>
                 <button class="btn-folio btn-pin" onclick="togglePin('freecad-suite')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
               </div>
-              <div class="card-subtitle">44 Fully Parametric Mechanical Assemblies &bull; Precision CAD</div>
+              <div class="card-subtitle">100s of Assemblies Designed &bull; 44 Featured Open-Source Models</div>
               <p class="card-text">
-                A massive, mathematically rigorous CAD repository comprising 44 complex mechanical assemblies. Highlights include zero-backlash cycloidal drives, harmonic reducers, compound planetary gearboxes, a 6-DOF robotic manipulator, Stewart hexapod platform, Delta robot, mechanical Tourbillon, and dual-spool jet engine cutaways with full parametric spreadsheets.
+                A massive, mathematically rigorous CAD portfolio comprising 100s of mechanical assemblies. Highlights include zero-backlash cycloidal drives, harmonic reducers, compound planetary gearboxes, a 6-DOF robotic manipulator, Stewart hexapod platform, Delta robot, mechanical Tourbillon, and dual-spool jet engine cutaways with full parametric spreadsheets.
               </p>
               <div>
                 <span class="badge-tag">FreeCAD</span>
@@ -143,13 +143,42 @@
                 <span class="badge-tag">Robotics Kinematics</span>
               </div>
               <div class="project-actions">
-                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View 44 Assemblies</a>
+                <a href="https://github.com/addy79/freecad" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> View 44 Featured Models</a>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 3. VRMechanics -->
+        <!-- 3. Pioneer ROV -->
+        <div class="col-lg-6 mb-4 project-grid-item filter-robotics" id="pioneer-rov">
+          <div class="project-card">
+            <div class="img-wrapper">
+              <img src="/assets/img/pioneer_rov.png" alt="Pioneer ROV Underwater Robotics">
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="card-title">Pioneer ROV</h3>
+                <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
+              </div>
+              <div class="card-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Active Competition Submersible</div>
+              <p class="card-text">
+                Autonomous and tethered underwater robotics vehicle engineered for this year's marine robotics competition. Leading the team and engineering the electrical architecture, 6-thruster vector control allocation, high-voltage battery regulation, and tethered RS-485/Ethernet sensor telemetry for extreme aquatic environments.
+              </p>
+              <div>
+                <span class="badge-tag">ROV Team Leader</span>
+                <span class="badge-tag">Marine Robotics</span>
+                <span class="badge-tag">Thruster Vectoring</span>
+                <span class="badge-tag">Power Distribution</span>
+                <span class="badge-tag">Embedded C++</span>
+              </div>
+              <div class="project-actions">
+                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. VRMechanics -->
         <div class="col-lg-6 mb-4 project-grid-item filter-xr filter-cad" id="vrmechanics">
           <div class="project-card">
             <div class="img-wrapper">
@@ -162,10 +191,10 @@
               </div>
               <div class="card-subtitle">Immersive Mechanical Teardown &amp; Inspection Trainer &bull; XR Era</div>
               <p class="card-text">
-                Interactive spatial VR laboratory built in Godot 4 with OpenXR support. Students and engineers physically disassemble and inspect 5 complex assemblies: a precision Cycloidal Gearbox, an Electric Motor, a 6-DOF Industrial Robot Arm, a VR Headset, and a Modern Smartphone. Features exploded views, real-time spatial physics, and step-by-step assembly sequences.
+                Interactive spatial VR laboratory built in Godot with OpenXR support. Students and engineers physically disassemble and inspect 5 complex assemblies: a precision Cycloidal Gearbox, an Electric Motor, a 6-DOF Industrial Robot Arm, a VR Headset, and a Modern Smartphone. Features exploded views, real-time spatial physics, and step-by-step assembly sequences.
               </p>
               <div>
-                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Godot</span>
                 <span class="badge-tag">OpenXR</span>
                 <span class="badge-tag">VR Training</span>
                 <span class="badge-tag">Kinematics</span>
@@ -178,7 +207,7 @@
           </div>
         </div>
 
-        <!-- 4. BrushlessLab -->
+        <!-- 5. BrushlessLab -->
         <div class="col-lg-6 mb-4 project-grid-item filter-bridge filter-xr" id="brushlesslab">
           <div class="project-card">
             <div class="img-wrapper">
@@ -198,38 +227,10 @@
                 <span class="badge-tag">Actuators</span>
                 <span class="badge-tag">Oscilloscope</span>
                 <span class="badge-tag">Motor Diagnostics</span>
-                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Godot</span>
               </div>
               <div class="project-actions">
                 <a href="https://github.com/addy79/vrmechanics" target="_blank" rel="noopener noreferrer" class="btn-folio"><i class="fa-brands fa-github"></i> Source Code</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Pioneer ROV -->
-        <div class="col-lg-6 mb-4 project-grid-item filter-robotics" id="pioneer-rov">
-          <div class="project-card">
-            <div class="img-wrapper">
-              <img src="/assets/img/pioneer_rov.png" alt="Pioneer ROV Underwater Robotics">
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between align-items-baseline">
-                <h3 class="card-title">Pioneer ROV</h3>
-                <button class="btn-folio btn-pin" onclick="togglePin('pioneer-rov')" title="Toggle Pin"><i class="fa-regular fa-star"></i> Pin</button>
-              </div>
-              <div class="card-subtitle">Underwater Exploration Robot &bull; AUI Robotics Club &bull; Robotics Era</div>
-              <p class="card-text">
-                Autonomous and tethered underwater robotics vehicle engineered for the regional marine robotics competition. Led the electrical architecture, 6-thruster vector control allocation, high-voltage battery regulation, and tethered RS-485/Ethernet sensor telemetry for extreme aquatic environments.
-              </p>
-              <div>
-                <span class="badge-tag">Marine Robotics</span>
-                <span class="badge-tag">Thruster Vectoring</span>
-                <span class="badge-tag">Power Distribution</span>
-                <span class="badge-tag">Embedded C++</span>
-              </div>
-              <div class="project-actions">
-                <span class="btn-folio text-muted"><i class="fa-solid fa-water"></i> Marine Robotics Club</span>
               </div>
             </div>
           </div>
@@ -307,7 +308,7 @@
                 GPU shader-accelerated vector field engine rendering 3D magnetic flux lines, Coulomb electrostatic potentials, and dynamic particle advection under Lorentz forces in OpenXR virtual reality.
               </p>
               <div>
-                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Godot</span>
                 <span class="badge-tag">OpenXR</span>
                 <span class="badge-tag">GPU Shaders</span>
                 <span class="badge-tag">Electromagnetism</span>
@@ -422,7 +423,7 @@
               <div>
                 <span class="badge-tag">Game Architecture</span>
                 <span class="badge-tag">A* Pathfinding</span>
-                <span class="badge-tag">Godot 4</span>
+                <span class="badge-tag">Godot</span>
                 <span class="badge-tag">Python</span>
                 <span class="badge-tag">16 Games</span>
               </div>
@@ -441,7 +442,7 @@
   <footer>
     <div class="container text-center">
       <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
-      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics &amp; Cyber-Physical Systems | Al Akhawayn University in Ifrane</p>
+      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics | Al Akhawayn University in Ifrane</p>
     </div>
   </footer>
 

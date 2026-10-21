@@ -7,7 +7,7 @@
 
   <title>Curriculum Vitae | Asmae El Harti</title>
   <meta name="author" content="Asmae El Harti">
-  <meta name="description" content="Curriculum Vitae of Asmae El Harti - General Engineer specialized in Mechatronics & Cyber-Physical Systems.">
+  <meta name="description" content="Curriculum Vitae of Asmae El Harti - General Engineer specialized in Mechatronics.">
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
@@ -74,14 +74,11 @@
           <h1 class="post-title">
             <span class="font-weight-bold">Curriculum</span> Vitae
           </h1>
-          <p class="desc">Asmae El Harti &bull; General Engineer &bull; Mechatronics &amp; Cyber-Physical Systems</p>
+          <p class="desc">Asmae El Harti &bull; General Engineer &bull; Mechatronics</p>
         </div>
         <div class="mt-2 mt-md-0 d-flex gap-2">
-          <a href="/assets/pdf/resume.pdf" class="btn-folio btn-folio-primary" download="Asmae_El_Harti_Resume.pdf" title="Download Official PDF Resume">
-            <i class="fa-solid fa-download"></i> Download Resume PDF
-          </a>
-          <button class="btn-folio ml-2" onclick="window.print()" title="Print CV">
-            <i class="fa-solid fa-print"></i> Print
+          <button class="btn-folio btn-folio-primary" onclick="showToast('Official CV PDF is in development — available upon request via a.elharti@aui.ma');" title="CV PDF In Development">
+            <i class="fa-solid fa-file-pdf"></i> CV PDF (In Development)
           </button>
         </div>
       </header>
@@ -120,17 +117,6 @@
               <li>Active researcher on cyber-physical digital twin systems under the supervision of Prof. Rachid Lghoul.</li>
             </ul>
           </div>
-
-          <div class="cv-entry">
-            <div class="cv-entry-header">
-              <span class="cv-entry-title">ALX Africa</span>
-              <span class="cv-entry-date">2023 &ndash; Present</span>
-            </div>
-            <div class="cv-entry-subtitle">Software Engineering Specialization &bull; Systems &amp; Low-Level Computing</div>
-            <ul>
-              <li>Rigorous systems programming curriculum in C, Linux operating system internals, memory allocation and virtual memory, POSIX socket networking, concurrent multi-threading, and Python backend services.</li>
-            </ul>
-          </div>
         </div>
 
         <!-- Languages -->
@@ -138,13 +124,13 @@
           <h3 class="cv-section-title"><i class="fa-solid fa-language mr-2"></i> Languages</h3>
           <div class="row">
             <div class="col-md-4 mb-2">
-              <strong>Arabic:</strong> <span class="text-muted">Native Proficiency</span>
+              <strong>Arabic:</strong> <span class="text-muted">Native</span>
             </div>
             <div class="col-md-4 mb-2">
-              <strong>English:</strong> <span class="text-muted">Fluent / Academic &amp; Professional</span>
+              <strong>French:</strong> <span class="text-muted">Fluent / Academic</span>
             </div>
             <div class="col-md-4 mb-2">
-              <strong>French:</strong> <span class="text-muted">Bilingual / Professional Proficiency</span>
+              <strong>English:</strong> <span class="text-muted">Bilingual / Professional</span>
             </div>
           </div>
         </div>
@@ -156,20 +142,37 @@
           <div class="row">
             <div class="col-md-6 mb-3">
               <strong>Mechanical Design &amp; CAD:</strong>
-              <p class="text-muted small mb-0">FreeCAD (author of 44 parametric mechanisms), SolidWorks, custom cycloidal reducers, harmonic strain-wave gearing, planetary gearboxes, Stewart hexapod platforms, Delta parallel robots, 3D printing (FDM/Resin), press-fits &amp; tolerance stackup.</p>
+              <p class="text-muted small mb-0">FreeCAD (100s of mechanisms designed), SolidWorks, custom cycloidal reducers, harmonic strain-wave gearing, planetary gearboxes, Stewart hexapod platforms, Delta parallel robots, 3D printing (FDM/Resin), press-fits &amp; tolerance stackup.</p>
             </div>
             <div class="col-md-6 mb-3">
               <strong>Embedded &amp; Electronics:</strong>
-              <p class="text-muted small mb-0">Raspberry Pi Zero, Arduino, STM32, C/C++, Python, low-latency UDP sockets, UART, SPI, I2C, hardware-in-the-loop (HIL) telemetry, power distribution boards, oscilloscopes, bench diagnostics.</p>
+              <p class="text-muted small mb-0">Raspberry Pi, Arduino, STM32, ESP32, microcontrollers &amp; SBCs, low-latency UDP sockets, UART, SPI, I2C, hardware-in-the-loop (HIL) telemetry, power distribution boards, oscilloscopes, bench diagnostics.</p>
             </div>
             <div class="col-md-6 mb-3">
-              <strong>Simulation &amp; Spatial Computing:</strong>
-              <p class="text-muted small mb-0">Godot 4, OpenXR Virtual Reality, multi-body kinematics, real-time spatial physics, GPU shaders (Maxwell vector fields), multi-user network replication.</p>
+              <strong>Spatial Simulation &amp; Game Engines:</strong>
+              <p class="text-muted small mb-0">Godot (preferred engine), Unity, OpenXR, multi-body kinematics, real-time spatial physics, GPU shaders (Maxwell vector fields), multi-user network replication.</p>
             </div>
             <div class="col-md-6 mb-3">
-              <strong>Control Systems &amp; Actuators:</strong>
-              <p class="text-muted small mb-0">Forward &amp; Inverse Kinematics (FK/IK), PID regulation, BLDC 3-phase motor diagnostics, dynamometer test bench integration, back-EMF waveform scope analysis, Hall sensor calibration.</p>
+              <strong>Programming &amp; Software Systems:</strong>
+              <p class="text-muted small mb-0">Python, C, C++, C#, GDScript, JavaScript/TypeScript, Bash, Linux, Git, Forward &amp; Inverse Kinematics (FK/IK), PID regulation, BLDC motor diagnostics.</p>
             </div>
+          </div>
+        </div>
+
+        <!-- Leadership & Activities -->
+        <div class="cv-section">
+          <h3 class="cv-section-title"><i class="fa-solid fa-users mr-2"></i> Leadership &amp; Engineering Roles</h3>
+
+          <div class="cv-entry">
+            <div class="cv-entry-header">
+              <span class="cv-entry-title">Pioneer ROV &ndash; Underwater Exploration Submersible</span>
+              <span class="cv-entry-date">2023 &ndash; Present</span>
+            </div>
+            <div class="cv-entry-subtitle">Team Leader &amp; Mechatronics Engineer &bull; Al Akhawayn University Robotics Club</div>
+            <ul>
+              <li>Leading the multidisciplinary engineering team for this year's regional marine robotics competition.</li>
+              <li>Engineered the electrical power distribution system, 6-thruster vector control allocation matrix, tethered RS-485/Ethernet sensor telemetry, and neutral-buoyancy frame architecture.</li>
+            </ul>
           </div>
         </div>
 
@@ -180,64 +183,36 @@
           <div class="cv-entry">
             <div class="cv-entry-header">
               <span class="cv-entry-title">Digitwin1 &ndash; Cyber-Physical Robotic Actuator Digital Twin</span>
-              <span class="cv-entry-date">Godot 4 &bull; OpenXR &bull; Raspberry Pi Zero</span>
+              <span class="cv-entry-date">Godot &bull; OpenXR &bull; Embedded Hardware</span>
             </div>
             <div class="cv-entry-subtitle">Lead Architect &amp; Developer &bull; The Bridge Era</div>
             <ul>
-              <li>Architected an end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot 4.</li>
-              <li>Engineered a sub-millisecond bidirectional UDP telemetry bridge on Raspberry Pi Zero streaming encoder angles, torque setpoints, dynamic joint limits, and hardware safety interlocks.</li>
+              <li>Architected an end-to-end cyber-physical digital twin connecting a 1-DOF physical actuator with an OpenXR spatial simulation in Godot.</li>
+              <li>Engineered a sub-millisecond bidirectional UDP telemetry bridge streaming encoder angles, torque setpoints, dynamic joint limits, and hardware safety interlocks.</li>
             </ul>
           </div>
 
           <div class="cv-entry">
             <div class="cv-entry-header">
-              <span class="cv-entry-title">FreeCAD Parametric Mechanism Suite</span>
-              <span class="cv-entry-date">44 Parametric Assemblies &bull; Kinematics</span>
+              <span class="cv-entry-title">Parametric Mechanism Suite</span>
+              <span class="cv-entry-date">100s of Assemblies &bull; 44 Open-Source Models</span>
             </div>
             <div class="cv-entry-subtitle">Creator &amp; CAD Architect &bull; Mechanical Engineering</div>
             <ul>
-              <li>Engineered 44 complex mechanical mechanisms from first principles: zero-backlash cycloidal reducers, harmonic strain-wave drives, Stewart hexapod platforms, Delta parallel robots, and dual-spool jet engines.</li>
-              <li>Built all models with fully parametric spreadsheet constraints for dynamic scalability, tooth profile recalculation, and 3D print manufacturing.</li>
+              <li>Engineered 100s of complex mechanical mechanisms from first principles: zero-backlash cycloidal reducers, harmonic strain-wave drives, Stewart hexapod platforms, Delta parallel robots, and dual-spool jet engines.</li>
+              <li>Published 44 featured assemblies on GitHub with fully parametric spreadsheet constraints for dynamic scalability and 3D print manufacturing.</li>
             </ul>
           </div>
 
           <div class="cv-entry">
             <div class="cv-entry-header">
               <span class="cv-entry-title">VRMechanics &amp; BrushlessLab</span>
-              <span class="cv-entry-date">Godot 4 &bull; Spatial Mechatronics</span>
+              <span class="cv-entry-date">Godot &bull; Spatial Mechatronics</span>
             </div>
             <div class="cv-entry-subtitle">Creator &amp; Simulation Engineer &bull; XR Era</div>
             <ul>
               <li>Created virtual reality teardown and assembly trainers for multi-body mechanical systems and 3-phase BLDC actuators.</li>
               <li>Engineered diagnostic benches for milliohm winding resistance, back-EMF oscilloscope verification, and Hall sensor timing.</li>
-            </ul>
-          </div>
-
-          <div class="cv-entry">
-            <div class="cv-entry-header">
-              <span class="cv-entry-title">Autonomous Robotics &amp; Marine Submersible (Pioneer ROV)</span>
-              <span class="cv-entry-date">Arduino &bull; Marine Robotics</span>
-            </div>
-            <div class="cv-entry-subtitle">Electronics &amp; Telemetry Lead &bull; Robotics Era</div>
-            <ul>
-              <li>Designed the electrical power distribution system, 6-thruster vector control allocation matrix, and tethered RS-485/Ethernet sensor telemetry for the Pioneer ROV underwater exploration robot.</li>
-              <li>Engineered autonomous line followers and obstacle-avoiding rovers using ultrasonic sensors and custom H-bridges.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Leadership & Activities -->
-        <div class="cv-section">
-          <h3 class="cv-section-title"><i class="fa-solid fa-users mr-2"></i> Leadership &amp; Extracurriculars</h3>
-
-          <div class="cv-entry">
-            <div class="cv-entry-header">
-              <span class="cv-entry-title">Al Akhawayn University Robotics Club</span>
-              <span class="cv-entry-date">2023 &ndash; Present</span>
-            </div>
-            <div class="cv-entry-subtitle">Electronics &amp; Telemetry Lead &bull; Pioneer ROV Marine Submersible</div>
-            <ul>
-              <li>Formulated the technical architecture and regional strategy for the underwater exploration robot competing in regional marine robotics challenges.</li>
             </ul>
           </div>
         </div>
@@ -250,7 +225,7 @@
   <footer>
     <div class="container text-center">
       <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
-      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics &amp; Cyber-Physical Systems | Al Akhawayn University in Ifrane</p>
+      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics | Al Akhawayn University in Ifrane</p>
     </div>
   </footer>
 
