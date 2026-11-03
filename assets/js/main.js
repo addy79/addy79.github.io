@@ -231,13 +231,6 @@ const LAB_APPS = {
     url: "/apps/coassembly/index.html",
     apkUrl: "https://github.com/addy79/CoAssembly/releases/download/v1.0.0/coassembly-quest.apk",
     controls: "🖥️ Desktop: WASD to move • Right-Click to look • Manipulate components | 🥽 Quest: Click 'Enter VR'"
-  },
-  vrscent: {
-    title: "VRScent: Multisensory Science Lab",
-    badge: "Godot 4 • Olfactory Sim",
-    url: "/apps/vrscent/index.html",
-    apkUrl: "https://github.com/addy79/VRScent/releases/download/v1.0.0/vrscent-quest.apk",
-    controls: "🖥️ Desktop: WASD to move • Right-Click to look • Inspect plumes & herb plants | 🥽 Quest: Click 'Enter VR'"
   }
 };
 
@@ -357,6 +350,10 @@ function createLabModalMarkup() {
 window.addEventListener("DOMContentLoaded", function () {
   const hash = window.location.hash;
   if (hash === "#interactive-lab" || hash === "#try-apps") {
+    if (window.location.pathname.includes("/projects")) {
+      window.location.replace("/lab/");
+      return;
+    }
     setTimeout(scrollToLab, 250);
   }
   const params = new URLSearchParams(window.location.search);

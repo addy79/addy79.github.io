@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>Interactive Simulation &amp; XR Lab | Asmae El Harti</title>
+  <meta name="author" content="Asmae El Harti">
+  <meta name="description" content="Interactive Simulation &amp; WebXR Laboratory: In-browser 3D physics engines, spatial computing, and WebXR applications by Asmae El Harti.">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Slab:wght@400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <script src="/assets/js/theme.js"></script>
+</head>
+
+<body>
+  <progress id="progress" value="0" max="100"></progress>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-md fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <span class="initials-badge">AEH</span> Asmae El Harti
+        </a>
+
+        <div class="d-flex align-items-center ml-auto order-md-2">
+          <button class="search-btn" onclick="openSearchModal()" title="Search portfolio">
+            <i class="fa-solid fa-magnifying-glass"></i> <kbd>ctrl k</kbd>
+          </button>
+          <button class="toggle-btn" onclick="toggleTheme()" title="Switch Light/Dark/System theme">
+            <i id="theme-toggle-icon" class="fa-solid fa-sun"></i>
+          </button>
+          <button class="navbar-toggler ml-2" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars" style="color: var(--global-text-color);"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse order-md-1" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects/">projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/lab/">lab <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/cv/">cv</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/#contact">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mt-4" role="main">
+    <div class="post">
+      <header class="post-header">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="lab-pill-live"><span class="pulse-dot"></span> LIVE WEBXR &amp; 3D RUNTIME</span>
+        </div>
+        <h1 class="post-title">
+          <span class="font-weight-bold">Interactive XR</span> Lab
+        </h1>
+        <p class="desc">
+          High-performance spatial computing, multivariable physics engines, and mechanical inspection trainers running directly inside your browser (WASD + mouse), or inside Meta Quest for full 6-DOF WebXR immersion.
+        </p>
+      </header>
+
+      <!-- Quick Device Guide -->
+      <div class="lab-header mb-4">
+        <div class="lab-device-guide">
+          <div class="d-flex flex-wrap align-items-center justify-content-between">
+            <div class="guide-item mr-3 mb-1 mb-md-0">
+              <i class="fa-solid fa-desktop text-danger mr-1"></i> <strong>Desktop / Laptop:</strong> WASD to fly &bull; Right-Click + Drag to rotate &bull; Scroll to zoom
+            </div>
+            <div class="guide-item mr-3 mb-1 mb-md-0">
+              <i class="fa-solid fa-vr-cardboard text-danger mr-1"></i> <strong>VR Headset:</strong> Open in Quest Browser &bull; Click "Enter VR"
+            </div>
+            <div class="guide-item mb-1 mb-md-0">
+              <i class="fa-solid fa-bolt text-warning mr-1"></i> <strong>Zero-Install:</strong> 100% Client-Side WebAssembly
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apps Grid -->
+      <div class="row">
+
+        <!-- App 1: CalcVR -->
+        <div class="col-lg-6 mb-4">
+          <div class="lab-app-card">
+            <div class="lab-img-box">
+              <img src="/assets/img/calc_vr.jpg" alt="CalcVR 3D Multivariable Simulation">
+              <div class="lab-overlay-tag"><i class="fa-solid fa-cube mr-1"></i> WebXR + Desktop 3D</div>
+            </div>
+            <div class="lab-card-content">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="lab-app-title">CalcVR: Multivariable Calculus</h3>
+                <span class="badge-tag">Godot 4 &bull; WebXR</span>
+              </div>
+              <p class="lab-app-desc">
+                Spatial 3D mathematical visualization: dynamic scalar surfaces $z = f(x, y)$, tangent planes, gradient descent vectors, solids of revolution with Riemann slicing, and vector curl/divergence probes.
+              </p>
+              <div class="lab-specs-strip">
+                <span><i class="fa-solid fa-gamepad mr-1"></i> WASD + Mouse</span>
+                <span><i class="fa-solid fa-vr-cardboard mr-1"></i> Quest 6-DOF</span>
+                <span><i class="fa-solid fa-bolt mr-1"></i> WebAssembly</span>
+              </div>
+              <div class="lab-action-row">
+                <button class="btn-folio btn-folio-primary" onclick="launchLabApp('calcvr')">
+                  <i class="fa-solid fa-play mr-1"></i> Launch 3D Demo
+                </button>
+                <a href="https://github.com/addy79/vr-calculus/releases/download/v1.0.0/vr-calculus-quest.apk" target="_blank" rel="noopener noreferrer" class="btn-folio" title="Download standalone APK for Meta Quest">
+                  <i class="fa-brands fa-android mr-1"></i> Quest APK
+                </a>
+                <button class="btn-folio" onclick="openReadmeModal('calc-vr')">
+                  <i class="fa-brands fa-github mr-1"></i> README.md
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 2: VRFields -->
+        <div class="col-lg-6 mb-4">
+          <div class="lab-app-card">
+            <div class="lab-img-box">
+              <img src="/assets/img/vrfields.png" alt="VRFields Maxwell Vector Engine">
+              <div class="lab-overlay-tag"><i class="fa-solid fa-atom mr-1"></i> WebXR + Desktop 3D</div>
+            </div>
+            <div class="lab-card-content">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="lab-app-title">VRFields: Maxwell Vector Engine</h3>
+                <span class="badge-tag">GLSL &bull; Compute/CPU</span>
+              </div>
+              <p class="lab-app-desc">
+                Electromagnetic field laboratory: 3D magnetic flux lines, Coulomb electrostatic potentials, dynamic particle advection under Lorentz forces, and spatial divergence/curl probes.
+              </p>
+              <div class="lab-specs-strip">
+                <span><i class="fa-solid fa-gamepad mr-1"></i> WASD + Mouse</span>
+                <span><i class="fa-solid fa-vr-cardboard mr-1"></i> Quest 6-DOF</span>
+                <span><i class="fa-solid fa-microchip mr-1"></i> Hybrid Pipeline</span>
+              </div>
+              <div class="lab-action-row">
+                <button class="btn-folio btn-folio-primary" onclick="launchLabApp('vrfields')">
+                  <i class="fa-solid fa-play mr-1"></i> Launch 3D Demo
+                </button>
+                <a href="https://github.com/addy79/vrfields/releases/download/v1.0.0/vrfields-quest.apk" target="_blank" rel="noopener noreferrer" class="btn-folio" title="Download standalone APK for Meta Quest">
+                  <i class="fa-brands fa-android mr-1"></i> Quest APK
+                </a>
+                <button class="btn-folio" onclick="openReadmeModal('vrfields')">
+                  <i class="fa-brands fa-github mr-1"></i> README.md
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 3: VRMechanics -->
+        <div class="col-lg-6 mb-4">
+          <div class="lab-app-card">
+            <div class="lab-img-box">
+              <img src="/assets/img/vrmechanics.png" alt="VRMechanics Mechanical Teardown Lab">
+              <div class="lab-overlay-tag"><i class="fa-solid fa-wrench mr-1"></i> WebXR + Desktop 3D</div>
+            </div>
+            <div class="lab-card-content">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="lab-app-title">VRMechanics: Teardown Trainer</h3>
+                <span class="badge-tag">Godot 4 &bull; Kinematics</span>
+              </div>
+              <p class="lab-app-desc">
+                Spatial mechanical disassembly trainer: Cycloidal gearbox, electric BLDC motor, 6-DOF robot arm, VR headset, and smartphone inspection with guided assembly sequencing.
+              </p>
+              <div class="lab-specs-strip">
+                <span><i class="fa-solid fa-gamepad mr-1"></i> WASD + Mouse</span>
+                <span><i class="fa-solid fa-vr-cardboard mr-1"></i> Quest 6-DOF</span>
+                <span><i class="fa-solid fa-gears mr-1"></i> Kinematics</span>
+              </div>
+              <div class="lab-action-row">
+                <button class="btn-folio btn-folio-primary" onclick="launchLabApp('vrmechanics')">
+                  <i class="fa-solid fa-play mr-1"></i> Launch 3D Demo
+                </button>
+                <button class="btn-folio" onclick="openReadmeModal('vrmechanics')">
+                  <i class="fa-brands fa-github mr-1"></i> README.md
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 4: MMLabVR -->
+        <div class="col-lg-6 mb-4">
+          <div class="lab-app-card">
+            <div class="lab-img-box">
+              <img src="/assets/img/mmlab_vr.jpg" alt="MMLabVR Mechanics of Materials Laboratory">
+              <div class="lab-overlay-tag"><i class="fa-solid fa-chart-line mr-1"></i> WebXR + Desktop 3D</div>
+            </div>
+            <div class="lab-card-content">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="lab-app-title">MMLabVR: Mechanics of Materials</h3>
+                <span class="badge-tag">Godot 4 &bull; 11 Benches</span>
+              </div>
+              <p class="lab-app-desc">
+                Virtual materials science lab spanning 11 interactive rigs: tensile/compression tests with von Mises stress contours, shaft torsion rigs, beam deflection, and 3D Mohr's circle.
+              </p>
+              <div class="lab-specs-strip">
+                <span><i class="fa-solid fa-gamepad mr-1"></i> WASD + Mouse</span>
+                <span><i class="fa-solid fa-vr-cardboard mr-1"></i> Quest 6-DOF</span>
+                <span><i class="fa-solid fa-flask mr-1"></i> Materials FEA</span>
+              </div>
+              <div class="lab-action-row">
+                <button class="btn-folio btn-folio-primary" onclick="launchLabApp('mmlabvr')">
+                  <i class="fa-solid fa-play mr-1"></i> Launch 3D Demo
+                </button>
+                <a href="https://github.com/addy79/MMLabVR/releases/download/v1.0.0/mmlabvr-quest.apk" target="_blank" rel="noopener noreferrer" class="btn-folio" title="Download standalone APK for Meta Quest">
+                  <i class="fa-brands fa-android mr-1"></i> Quest APK
+                </a>
+                <button class="btn-folio" onclick="openReadmeModal('mmlab-vr')">
+                  <i class="fa-brands fa-github mr-1"></i> README.md
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- App 5: CoAssembly VR -->
+        <div class="col-lg-6 mb-4">
+          <div class="lab-app-card">
+            <div class="lab-img-box">
+              <img src="/assets/img/coassembly_vr.png" alt="CoAssembly Collaborative Engineering Workspace">
+              <div class="lab-overlay-tag"><i class="fa-solid fa-users-gear mr-1"></i> WebXR + Desktop 3D</div>
+            </div>
+            <div class="lab-card-content">
+              <div class="d-flex justify-content-between align-items-baseline">
+                <h3 class="lab-app-title">CoAssembly: Collaborative CAD</h3>
+                <span class="badge-tag">Godot 4 &bull; Spatial Network</span>
+              </div>
+              <p class="lab-app-desc">
+                Multi-user collaborative spatial workspace enabling distributed engineers to jointly manipulate, inspect, and evaluate full-scale mechanical assemblies with synced physics and spatial audio.
+              </p>
+              <div class="lab-specs-strip">
+                <span><i class="fa-solid fa-gamepad mr-1"></i> WASD + Mouse</span>
+                <span><i class="fa-solid fa-vr-cardboard mr-1"></i> Quest 6-DOF</span>
+                <span><i class="fa-solid fa-network-wired mr-1"></i> Spatial Sockets</span>
+              </div>
+              <div class="lab-action-row">
+                <button class="btn-folio btn-folio-primary" onclick="launchLabApp('coassembly')">
+                  <i class="fa-solid fa-play mr-1"></i> Launch 3D Demo
+                </button>
+                <a href="https://github.com/addy79/CoAssembly/releases/download/v1.0.0/coassembly-quest.apk" target="_blank" rel="noopener noreferrer" class="btn-folio" title="Download standalone APK for Meta Quest">
+                  <i class="fa-brands fa-android mr-1"></i> Quest APK
+                </a>
+                <button class="btn-folio" onclick="openReadmeModal('coassembly')">
+                  <i class="fa-brands fa-github mr-1"></i> README.md
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-1">&copy; 2024 Asmae El Harti. Hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.</p>
+      <p class="small text-muted mb-0">General Engineer &bull; Mechatronics | Al Akhawayn University in Ifrane</p>
+    </div>
+  </footer>
+
+  <!-- Search Modal -->
+  <div id="search-modal-backdrop" class="search-modal-backdrop">
+    <div class="search-modal">
+      <div class="search-input-wrapper">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-query-input" class="search-input" placeholder="Search projects, tools, timeline, CV..." autocomplete="off">
+        <button class="toggle-btn" onclick="closeSearchModal()" style="border:none; padding:0 5px;" title="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div id="search-results-container" class="search-results"></div>
+      <div class="search-footer">
+        <span><kbd>Esc</kbd> to close</span>
+        <span>Navigation: Click or Enter</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/readme-data.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/kinematics-bg.js"></script>
+</body>
+</html>
