@@ -304,7 +304,7 @@ function createLabModalMarkup() {
       <div class="lab-modal-header">
         <h3 class="lab-modal-title">
           <span class="pulse-dot"></span>
-          <span id="lab-modal-title-text">Interactive XR Lab</span>
+          <span id="lab-modal-title-text">XRLab</span>
           <span class="badge-tag ml-2" id="lab-modal-badge">WebXR</span>
         </h3>
         <div class="d-flex align-items-center gap-2">

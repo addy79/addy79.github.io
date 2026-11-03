@@ -4,10 +4,10 @@
 
 const SEARCH_INDEX = [
   {
-    title: "Interactive Simulation & XR Lab (WebXR Live Demos)",
-    category: "Interactive XR Lab",
+    title: "XRLab: Live WebXR & 3D Interactive Showroom",
+    category: "XRLab",
     url: "/lab/",
-    keywords: "lab interactive live demo vr webxr wasd calcvr vrfields vrmechanics mmlabvr coassembly simulations godot"
+    keywords: "xrlab xr lab interactive live demo vr webxr wasd calcvr vrfields vrmechanics mmlabvr coassembly simulations godot"
   },
   {
     title: "Pioneer ROV: Underwater Exploration Submersible (2027 Marine Robotics Challenge)",
